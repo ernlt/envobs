@@ -1,0 +1,69 @@
+@media screen and (max-height: 900px) {
+  /* line 6, ../scss/adaptative.scss */
+  .title {
+    margin-top: 30px;
+  }
+
+  /* line 10, ../scss/adaptative.scss */
+  .langs {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-height: 820px) {
+  /* line 16, ../scss/adaptative.scss */
+  .title {
+    margin-top: 10px;
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+
+  /* line 22, ../scss/adaptative.scss */
+  .langs {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-height: 770px) {
+  /* line 29, ../scss/adaptative.scss */
+  .homeCell {
+    height: 158px;
+  }
+
+  /* line 33, ../scss/adaptative.scss */
+  .container {
+    height: 478px;
+    padding-bottom: 20px;
+    overflow: auto;
+  }
+
+  /* line 39, ../scss/adaptative.scss */
+  .input, .button {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  /* line 45, ../scss/adaptative.scss */
+  .textarea {
+    height: 100px;
+  }
+
+  /* line 49, ../scss/adaptative.scss */
+  .captcha_div {
+    width: 100%;
+    height: 101px;
+  }
+
+  /* line 54, ../scss/adaptative.scss */
+  #captcha {
+    display: block;
+    float: none;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* line 61, ../scss/adaptative.scss */
+  .captcha_input {
+    width: 100%;
+  }
+}
+
