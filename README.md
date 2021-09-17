@@ -1,2 +1,2 @@
-# envobs
+# spherobs
 personal website repository
