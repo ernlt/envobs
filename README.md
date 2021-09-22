@@ -1,2 +1,2 @@
 # ernlt.github.io
-personal website repository
+Source code of my personal website repository
