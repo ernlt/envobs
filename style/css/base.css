@@ -317,6 +317,10 @@ aside {
   width: 60%
 }
 
+.part {
+  background-color: #f6f6f6; 
+}
+
 .description {
   display: flex;
   flex-direction: row;
