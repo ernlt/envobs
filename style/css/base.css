@@ -451,7 +451,9 @@ border-bottom: 18px solid gainsboro;
   text-align: center;
   font-weight: 300;
   font-size: 14px;
-  color: #252525;
+  height: 20px;
+  line-height: 0px;
+  color: #f6f6f6;
 }
 
 /* line 467, ../scss/base.scss */
