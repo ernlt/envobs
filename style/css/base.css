@@ -317,8 +317,13 @@ aside {
   width: 60%
 }
 
+.project {
+  background-color: #f6f6f6;
+}
+
 .part {
-  background-color: #f6f6f6; 
+  height: 15px;
+  background-color: #f6f6f6;
 }
 
 .description {
