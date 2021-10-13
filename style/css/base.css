@@ -959,9 +959,10 @@ border-bottom: 18px solid gainsboro;
 
 #img-sp {
   margin-top: 20px;
-  margin-left: 30px;
-  width: 280px;
-  height: 180px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 700px;
+  height: 300px;
   display: flex;
 }
 
