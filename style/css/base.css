@@ -759,6 +759,15 @@ border-bottom: 18px solid gainsboro;
   display: flex;
 }
 
+#img-met7 {
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-right: 60px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+}
+
 #img-algo {
   margin-top: 20px;
   margin-left:60px;
