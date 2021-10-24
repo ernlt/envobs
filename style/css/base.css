@@ -310,9 +310,7 @@ p {
 }
 
 .imagery {
-  float: right;
   margin-left: 80px;
-  display: flex;
 }
 
 article {
