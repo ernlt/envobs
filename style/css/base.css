@@ -764,7 +764,8 @@ border-bottom: 18px solid gainsboro;
 }
 
 #img-types {
-  width:5px;
+  margin-top: 15px;
+  width: 15px;
   height: 325px;
 }
 
@@ -846,8 +847,8 @@ border-bottom: 18px solid gainsboro;
 #img-slots {
   margin-top: 20px;
   margin-left: 20px;
-  width: 780px;
-  height: 300px;
+  width: 800px;
+  height: 340px;
   display: flex;
 }
 
