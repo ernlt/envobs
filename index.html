@@ -852,17 +852,15 @@
 					Les valeurs de longitudes initialement comprises entre 0 et 360°, ont été transformées pour obtenir des valeurs comprises entre -180° et +180°, afin de travailler sur une grille continue.
 					Les dimensions de cette nouvelle zone d'intérêt sont désormais de 4800 x 5040 pixels.
 					La figure ci-dessous est un aperçu de l'extraction de la nouvelle grille, construite avec un pas (échantillonnage) de 10 pixels à partir de la grille IFS 1km tronquée.
-					L'extraction des coordonnées Sud-Ouest et Nord-Est de chaque domaine se fait alors par indexation dans les listes de latitudes-longitudes de cette grille de destination.
+					L'extraction des coordonnées Sud-Ouest et Nord-Est de chaque domaine se fait alors par indexation dans les listes de latitudes-longitudes de cette grille de destination (ponts rouges).
 				</p>
 			</div>
 			<div class="description">
-				<img src="style/css/img/area.png" id="img-area" class="demo-img">
-				<aside><img src="style/css/img/domain.png" id="img-dom" class="demo-img"></aside>
+				<img src="style/css/img/domain.png" id="img-dom" class="demo-img">
 			</div>
-
+			<div class="vspace"></div>
 			<div class="description">
 				<p>
-
 				La chaîne de traitement GeoClimate est implémentée par un workflow de données. Ce workflow a est lui-même été adapté selon
 				une méthodologie développée afin d'extraire et de formater les données OpenStreetMap en tant que données vectorielles, pour construire des couches SIG
 				conformes au modèle de données d'entrée de la chaîne GeoClimate. Ceci permet ensuite de calculer des indicateurs géospatiaux
