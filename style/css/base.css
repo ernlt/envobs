@@ -310,7 +310,8 @@ p {
 }
 
 .imagery {
-  margin-left: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 article {
