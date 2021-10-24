@@ -763,6 +763,11 @@ border-bottom: 18px solid gainsboro;
   display: flex;
 }
 
+#img-types {
+  width:5px;
+  height: 325px;
+}
+
 #img-met7 {
   margin-top: 15px;
   margin-left: 0px;
