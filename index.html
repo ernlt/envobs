@@ -302,6 +302,12 @@
 				La minimisation de la distance euclidienne entre les noyaux, correspondant aux centres de gravité des classes, au sein d'une même classe (distance intra-classe), et la maximisation de la distance entre les différentes classes (distance inter- classes).<br><br>
 				La figure ci-contre représente d'une part, les positions des centres de gravité des classes dans l'espace [VIS, IR] des paramètres spectraux, correspondant à la réflectance et la température de brillance; puis d'autre part,
 				l'amplitude des barres d'erreurs centrées sur les centres de gravité qui indiquent la valeur des écarts-types, paramètres spatiaux.
+			        <br><br>
+				Le processus itératif consiste a effectuer un certain nombre de tirages aléatoires des noyaux. On décide de ne garder que les tirages ayant généré au moins 20 classes.
+				Il est alors possible de construire la distribution des noyaux en fonction d'un nombre maximal d'itérations et selon un critère de convergence.
+				Les classes sont calculées pour une zone bien définie dans l'espace des paramètres P.
+					
+				
 			</p>
 			<aside><img src="style/css/img/ccgc2.png" id="img-ccgc1"></aside>
 		</div>
@@ -309,9 +315,6 @@
 		<div class="description">
 			<article>
 				<p>
-					Le processus itératif consiste a effectuer un certain nombre de tirages aléatoires des noyaux. On décide de ne garder que les tirages ayant généré au moins 20 classes.
-					Il est alors possible de construire la distribution des noyaux en fonction d'un nombre maximal d'itérations et selon un critère de convergence.
-					Les classes sont calculées pour une zone bien définie dans l'espace des paramètres P.
 					Les figures ci-dessous illustrent la superposition des distributions des noyaux obtenues à partir des 40 tirages aléatoires dans l'espace des paramètres [VIS, IR], en ne gardant uniquement les tirages de plus de 20 classes, et pour une heure fixée.
 				</p>
 			</article>
