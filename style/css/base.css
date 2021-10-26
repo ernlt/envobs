@@ -865,10 +865,10 @@ border-bottom: 18px solid gainsboro;
 }
 
 #img-classif {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 50px;
-  width: 530px;
-  height: 400px;
+  width: 510px;
+  height: 380px;
   display: flex;
 }
 
