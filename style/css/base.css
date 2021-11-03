@@ -635,7 +635,7 @@ border-bottom: 18px solid gainsboro;
 
 /* line 571, ../scss/base.scss */
 .homeCell.experience .homeCellTitle {
-  color: white;
+  color: #141414;
 }
 /* line 573, ../scss/base.scss */
 .homeCell.experience .homeCellTitle::before {
@@ -643,7 +643,7 @@ border-bottom: 18px solid gainsboro;
 }
 
 .homeCell:hover .homeCellTitle {
-  color: white; /*#00B19D;*/
+  color: #141414; /*#00B19D;*/
 }
 
 /* line 576, ../scss/base.scss */
@@ -666,7 +666,7 @@ border-bottom: 18px solid gainsboro;
 
 /* line 586, ../scss/base.scss */
 .homeCell.contact .homeCellTitle {
-  color: white;
+  color: #141414;
 }
 /* line 588, ../scss/base.scss */
 .homeCell.contact .homeCellTitle::before {
@@ -674,7 +674,7 @@ border-bottom: 18px solid gainsboro;
 }
 
 .homeCell.contact:hover .homeCellTitle {
-  color: white; /*#00B19D;*/
+  color: #141414; /*#00B19D;*/
 }
 
 /* line 591, ../scss/base.scss */
