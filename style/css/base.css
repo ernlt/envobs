@@ -485,8 +485,8 @@ border-bottom: 18px solid gainsboro;
   float: left;
   width: 198px;
   height: 198px;
-  opacity: 0.7;
-  background-color: #335E6F; / #0B1D26 *rgba(0, 0, 0, 0.75); /* #af8461; 00B19D 009DE1 00AE9D FFA800 335E6F ED1B2F*/
+  opacity: 0.9;
+  background-color: lightgrey; /*#335E6F; / #0B1D26 *rgba(0, 0, 0, 0.75); /* #af8461; 00B19D 009DE1 00AE9D FFA800 335E6F ED1B2F*/
   border: 1px solid white;
   cursor: pointer;
   -moz-transition: opacity 0.7s, background 0.7s, height 1s;
