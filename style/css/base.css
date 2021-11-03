@@ -503,7 +503,7 @@ border-bottom: 18px solid gainsboro;
 /* line 493, ../scss/base.scss */
 .homeCell:hover {
   opacity: 1;
-  background-color:  #335E6F; /#0B1D26 *#252525; rgba(0, 177, 157, 0.75);*/
+  background-color:  lightgrey; /*#335E6F; /#0B1D26 *#252525; rgba(0, 177, 157, 0.75);*/
   -moz-transition: opacity 0.5s, background 0.5s;
   -o-transition: opacity 0.5s, background 0.5s;
   -webkit-transition: opacity 0.5s, background 0.5s;
@@ -578,7 +578,7 @@ border-bottom: 18px solid gainsboro;
   left: 0;
   padding-left: 5px;
   text-align: center;
-  color: #bebebe;
+  color: #141414; /*#bebebe;*/
   font-weight: 400;
   font-size: 16px;
   -moz-transition: padding 0.5s;
@@ -614,7 +614,7 @@ border-bottom: 18px solid gainsboro;
   left: 0;
   padding-left: 20px;
   text-align: center;
-  color: white;
+  color: #141414;
   font-weight: 400;
   font-size: 12px;
   opacity: 0.8;
@@ -717,13 +717,13 @@ border-bottom: 18px solid gainsboro;
 #img-bio {
   width: 90px;
   height: 90px;
-  filter: invert(1);
+  filter: invert(0);
 }
 
 #img-mail {
   width: 120px;
   height: 140px;
-  filter: invert(1);
+  filter: invert(0);
 }
 
 #img1 {
@@ -743,7 +743,7 @@ border-bottom: 18px solid gainsboro;
 #img2_list {
   width: 140px;
   height: 128px;
-  filter: invert(1);
+  filter: invert(0);
 }
 
 #img1-null {
