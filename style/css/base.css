@@ -504,7 +504,7 @@ border-bottom: 18px solid gainsboro;
 .homeCell:hover {
   opacity: 1;
   background-color:  #335E6F; /*#0B1D26 *#252525; rgba(0, 177, 157, 0.75);*/
-  border-bottom: 3px solid #f47920;
+  border-bottom: 4px solid #f47920;
   -moz-transition: opacity 0.5s, background 0.5s;
   -o-transition: opacity 0.5s, background 0.5s;
   -webkit-transition: opacity 0.5s, background 0.5s;
