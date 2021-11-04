@@ -486,7 +486,7 @@ border-bottom: 18px solid gainsboro;
   width: 198px;
   height: 198px;
   opacity: 0.8;
-  background-color: lightgrey; /*#335E6F; / #0B1D26 *rgba(0, 0, 0, 0.75); /* #af8461; 00B19D 009DE1 00AE9D FFA800 335E6F ED1B2F*/
+  background-color: #335E6F; / #0B1D26 *rgba(0, 0, 0, 0.75); /* #af8461; 00B19D 009DE1 00AE9D FFA800 335E6F ED1B2F*/
   border: 1px solid white;
   cursor: pointer;
   -moz-transition: opacity 0.7s, background 0.7s, height 1s;
@@ -503,7 +503,7 @@ border-bottom: 18px solid gainsboro;
 /* line 493, ../scss/base.scss */
 .homeCell:hover {
   opacity: 1;
-  background-color:  lightgrey; /*#335E6F; /#0B1D26 *#252525; rgba(0, 177, 157, 0.75);*/
+  background-color:  #335E6F; /#0B1D26 *#252525; rgba(0, 177, 157, 0.75);*/
   -moz-transition: opacity 0.5s, background 0.5s;
   -o-transition: opacity 0.5s, background 0.5s;
   -webkit-transition: opacity 0.5s, background 0.5s;
@@ -578,7 +578,7 @@ border-bottom: 18px solid gainsboro;
   left: 0;
   padding-left: 5px;
   text-align: center;
-  color: #141414; /*#bebebe;*/
+  color: #bebebe;
   font-weight: 400;
   font-size: 16px;
   -moz-transition: padding 0.5s;
@@ -614,7 +614,7 @@ border-bottom: 18px solid gainsboro;
   left: 0;
   padding-left: 20px;
   text-align: center;
-  color: #141414;
+  color: #bebebe;
   font-weight: 400;
   font-size: 12px;
   opacity: 0.8;
@@ -635,15 +635,15 @@ border-bottom: 18px solid gainsboro;
 
 /* line 571, ../scss/base.scss */
 .homeCell.experience .homeCellTitle {
-  color: #141414;
+  color: white;
 }
 /* line 573, ../scss/base.scss */
 .homeCell.experience .homeCellTitle::before {
-  border-left-color: #141414; /* #00B19D 009DE1*/
+  border-left-color: white; /* #00B19D 009DE1*/
 }
 
 .homeCell:hover .homeCellTitle {
-  color: #141414; /*#00B19D;*/
+  color: white; /*#00B19D;*/
 }
 
 /* line 576, ../scss/base.scss */
@@ -666,15 +666,15 @@ border-bottom: 18px solid gainsboro;
 
 /* line 586, ../scss/base.scss */
 .homeCell.contact .homeCellTitle {
-  color: #141414;
+  color: white;
 }
 /* line 588, ../scss/base.scss */
 .homeCell.contact .homeCellTitle::before {
-  border-left-color: #141414; /*#00B19D;*/
+  border-left-color: white; /*#00B19D;*/
 }
 
 .homeCell.contact:hover .homeCellTitle {
-  color: #141414; /*#00B19D;*/
+  color: white; /*#00B19D;*/
 }
 
 /* line 591, ../scss/base.scss */
@@ -717,13 +717,13 @@ border-bottom: 18px solid gainsboro;
 #img-bio {
   width: 90px;
   height: 90px;
-  filter: invert(0);
+  filter: invert(1);
 }
 
 #img-mail {
   width: 120px;
   height: 140px;
-  filter: invert(0);
+  filter: invert(1);
 }
 
 #img1 {
@@ -743,7 +743,7 @@ border-bottom: 18px solid gainsboro;
 #img2_list {
   width: 140px;
   height: 128px;
-  filter: invert(0);
+  filter: invert(1);
 }
 
 #img1-null {
