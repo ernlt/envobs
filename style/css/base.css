@@ -92,7 +92,7 @@ body.darken .creationsLink {
   font-weight: 300;
   font-size: 25px;
   text-align: center;
-  color: #252525;
+  color: #6a6a6a;
   z-index: 10;
   cursor: default;
   -moz-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
@@ -108,7 +108,7 @@ body.darken .creationsLink {
   font-weight: 300;
   font-size: 18px;
   text-align: center;
-  color: #252525;
+  color: #6a6a6a;
   z-index: 10;
   cursor: default;
   -moz-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
@@ -242,6 +242,7 @@ body.darken .creationsLink {
   padding-left: 0;
   font-weight: 300;
   font-size: 20px;
+  color: #7a7a7a;
 }
 /* line 180, ../scss/base.scss */
 .pageSubtitle.experience {
@@ -257,7 +258,7 @@ body.darken .creationsLink {
 }
 /* line 183, ../scss/base.scss */
 .pageSubtitle.contact {
-  color: #252525;
+  color: #7a7a7a;
 }
 
 /* line 266, ../scss/base.scss */
