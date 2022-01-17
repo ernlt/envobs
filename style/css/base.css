@@ -638,6 +638,7 @@ border-bottom: 18px solid gainsboro;
 /* line 571, ../scss/base.scss */
 .homeCell.experience .homeCellTitle {
   color: white;
+  font-weight: 600;
 }
 /* line 573, ../scss/base.scss */
 .homeCell.experience .homeCellTitle::before {
@@ -646,6 +647,7 @@ border-bottom: 18px solid gainsboro;
 
 .homeCell:hover .homeCellTitle {
   color: white; /*#00B19D;*/
+  font-weight: 600;
 }
 
 /* line 576, ../scss/base.scss */
@@ -669,6 +671,7 @@ border-bottom: 18px solid gainsboro;
 /* line 586, ../scss/base.scss */
 .homeCell.contact .homeCellTitle {
   color: white;
+  font-weight: 600;
 }
 /* line 588, ../scss/base.scss */
 .homeCell.contact .homeCellTitle::before {
