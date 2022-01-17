@@ -92,7 +92,7 @@ body.darken .creationsLink {
   font-weight: 300;
   font-size: 25px;
   text-align: center;
-  color: #6a6a6a;
+  color: #333;
   z-index: 10;
   cursor: default;
   -moz-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
@@ -108,7 +108,7 @@ body.darken .creationsLink {
   font-weight: 300;
   font-size: 18px;
   text-align: center;
-  color: #6a6a6a;
+  color: #333;
   z-index: 10;
   cursor: default;
   -moz-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
@@ -131,7 +131,7 @@ body.darken .creationsLink {
 }
 /* line 92, ../scss/base.scss */
 .langs a {
-  color: #6a6a6a;
+  color: #333;
   text-decoration: none;
   -moz-transition: color 0.2s;
   -o-transition: color 0.2s;
@@ -217,11 +217,11 @@ body.darken .creationsLink {
   padding-left: 0px;
   font-weight: 300;
   font-size: 28px;
-  color: #6a6a6a;
+  color: #333;
 }
 /* line 167, ../scss/base.scss */
 .pageTitle.experience {
-  color: #6a6a6a;
+  color: #333;
 }
 /* line 168, ../scss/base.scss */
 .pageTitle.audio {
@@ -258,7 +258,7 @@ body.darken .creationsLink {
 }
 /* line 183, ../scss/base.scss */
 .pageSubtitle.contact {
-  color: #7a7a7a;
+  color: #333;
 }
 
 /* line 266, ../scss/base.scss */
@@ -457,7 +457,7 @@ border-bottom: 18px solid gainsboro;
   text-align: center;
   font-weight: 300;
   font-size: 14px;
-  color: #252525;
+  color: #333;
   width: 800px;
   height: 20px;
   line-height: 0px;
