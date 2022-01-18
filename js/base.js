@@ -36,6 +36,14 @@ jQuery(function($){
 		$("body").removeClass("darken");
 		$(".creationsLink").removeClass("disabled");
 	});
+	
+	
+	$(".back").click(function(){
+		$(".container").stop().slideUp(600);
+		$(".homeTableIcon").stop().slideDown(600);
+		$("body").removeClass("darken");
+		$(".creationsLink").removeClass("disabled");
+	});
 
 	
 });
