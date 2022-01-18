@@ -31,7 +31,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
-  background: white; /*#F2F2F2*/
+  background: white;
   /*background-image: url("img/saturne.jpg");*/
   background-position: center center;
   background-attachment: fixed;
@@ -65,23 +65,6 @@ body.darken .creationsLink {
   width: 800px;
   height: 300px;
   display: flex;
-}
-
-.pres {
-  position: relative;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  color: white;
-  font-size: 12px;
-  font-style: italic;
 }
 
 /* line 68, ../scss/base.scss */
@@ -129,31 +112,14 @@ body.darken .creationsLink {
   -webkit-transition: margin 1s;
   transition: margin 1s;
 }
-/* line 92, ../scss/base.scss */
-.langs a {
-  color: #333;
-  text-decoration: none;
-  -moz-transition: color 0.2s;
-  -o-transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-}
-/* line 98, ../scss/base.scss */
-.langs a:hover {
-  color: #575757;
-}
-/* line 99, ../scss/base.scss */
-.langs a:active {
-  color: #454545;
-}
 
 /* line 103, ../scss/base.scss */
 .container {
   margin: 0 auto;
   padding: 0 0px;
   padding-top: 67px;
-  width: 800px;
-  height: 600px;
+  width: 796px;
+  /*height: 600px;*/
   position: relative;
   color: #7a7a7a;
   background-color: white;
@@ -176,6 +142,7 @@ body.darken .creationsLink {
   -webkit-transition: background 0.5s, height 1s;
   transition: background 0.5s, height 1s;
 }
+
 /* line 131, ../scss/base.scss */
 .back.experience {
   background-color: lightgray; /*#009DE1;*/
@@ -186,22 +153,6 @@ body.darken .creationsLink {
   background-color: lightgray; /*#009DE1;*/
 }
 
-/* line 138, ../scss/base.scss */
-.back.audio {
-  background-color: lightgray;
-}
-/* line 140, ../scss/base.scss */
-.back.audio:hover {
-  background-color: lightgray;
-}
-/* line 145, ../scss/base.scss */
-.back.web {
-  background-color: #e74c3c;
-}
-/* line 147, ../scss/base.scss */
-.back.web:hover {
-  background-color: #c0392b;
-}
 /* line 152, ../scss/base.scss */
 .back.contact {
   background-color: lightgray;
@@ -223,14 +174,7 @@ body.darken .creationsLink {
 .pageTitle.experience {
   color: #333;
 }
-/* line 168, ../scss/base.scss */
-.pageTitle.audio {
-  color: #f39c12;
-}
-/* line 169, ../scss/base.scss */
-.pageTitle.web {
-  color: #e74c3c;
-}
+
 /* line 170, ../scss/base.scss */
 .pageTitle.contact {
   color: #00000;
@@ -248,14 +192,7 @@ body.darken .creationsLink {
 .pageSubtitle.experience {
   color: #252525;/*#3f9ddd;*/
 }
-/* line 181, ../scss/base.scss */
-.pageSubtitle.audio {
-  color: #f39c12;
-}
-/* line 182, ../scss/base.scss */
-.pageSubtitle.web {
-  color: #e74c3c;
-}
+
 /* line 183, ../scss/base.scss */
 .pageSubtitle.contact {
   color: #333;
@@ -267,25 +204,9 @@ p {
   text-align: justify;
 }
 
-/* line 287, ../scss/base.scss */
-.linksTable {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  table-layout: fixed;
-  border-spacing: 0;
-}
-/* line 295, ../scss/base.scss */
-.linksTable td {
-  text-align: center;
-  padding: 0;
-}
-/* line 300, ../scss/base.scss */
-.linksTable .header td {
-  padding: 10px 0;
-  color: #bebebe;
-  font-weight: 300;
-  font-size: 20px;
+a {
+  text-decoration: none;
+  color: #3498db;
 }
 
 /* line 309, ../scss/base.scss */
@@ -338,7 +259,12 @@ aside {
 }
 
 .hline {
-border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid #333;
+  width: 800px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .hline2 {
@@ -365,22 +291,7 @@ border-bottom: 18px solid gainsboro;
 .link.experience:hover {
   color: #2980b9;
 }
-/* line 330, ../scss/base.scss */
-.link.audio {
-  color: #f39c12;
-}
-/* line 330, ../scss/base.scss */
-.link.audio:hover {
-  color: #e67e22;
-}
-/* line 331, ../scss/base.scss */
-.link.web {
-  color: #e74c3c;
-}
-/* line 331, ../scss/base.scss */
-.link.web:hover {
-  color: #c0392b;
-}
+
 /* line 332, ../scss/base.scss */
 .link.contact {
   color: #1abc9c;
@@ -388,28 +299,6 @@ border-bottom: 18px solid gainsboro;
 /* line 332, ../scss/base.scss */
 .link.contact:hover {
   color: #16a085;
-}
-
-/* line 335, ../scss/base.scss */
-.right {
-  display: inline-block;
-  float: right;
-}
-
-/* line 340, ../scss/base.scss */
-.profile {
-  margin-top: 20px;
-  margin-bottom: 8px;
-  margin-left: 37%;
-}
-
-/* line 344, ../scss/base.scss */
-.profile-pic {
-  width: 60px;
-  height: 60px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
 }
 
 /* line 351, ../scss/base.scss */
@@ -453,15 +342,15 @@ border-bottom: 18px solid gainsboro;
   right: 0;
   margin: 0 auto;
   z-index: 1;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-align: center;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
   color: #333;
   width: 800px;
-  height: 20px;
+  height: 30px;
   line-height: 0px;
-  background: #f6f6f6;
+  background: white;
 }
 
 /* line 467, ../scss/base.scss */
@@ -477,6 +366,36 @@ border-bottom: 18px solid gainsboro;
   margin: 0 auto;
   width: 800px;
   overflow: hidden;
+}
+
+.homeTableIcon {
+  padding-top: 0px;
+  margin: 0 auto;
+  width: 800px;
+  overflow: hidden;
+}
+
+.homeIcon {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  cursor: pointer;
+  -moz-transition: opacity 0.7s, background 0.7s, height 1s;
+  -o-transition: opacity 0.7s, background 0.7s, height 1s;
+  -webkit-transition: opacity 0.7s, background 0.7s, height 1s;
+  transition: opacity 0.7s, background 0.7s, height 1s;
+  -webkit-touch-callout: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.homeIcon:hover {
+  -moz-transition: opacity 0.5s, background 0.5s;
+  -o-transition: opacity 0.5s, background 0.5s;
+  -webkit-transition: opacity 0.5s, background 0.5s;
+  transition: opacity 0.5s, background 0.5s;
 }
 
 /* line 478, ../scss/base.scss */
@@ -638,72 +557,44 @@ border-bottom: 18px solid gainsboro;
 /* line 571, ../scss/base.scss */
 .homeCell.experience .homeCellTitle {
   color: white;
-  font-weight: 600;
+  font-weight: 400;
 }
 /* line 573, ../scss/base.scss */
 .homeCell.experience .homeCellTitle::before {
-  border-left-color: white; /* #00B19D 009DE1*/
+  border-left-color: white; 
 }
 
 .homeCell:hover .homeCellTitle {
-  color: white; /*#00B19D;*/
-  font-weight: 600;
-}
-
-/* line 576, ../scss/base.scss */
-.homeCell.audio .homeCellTitle {
-  color: #f39c12;
-}
-/* line 578, ../scss/base.scss */
-.homeCell.audio .homeCellTitle::before {
-  border-left-color: #f39c12;
-}
-
-/* line 581, ../scss/base.scss */
-.homeCell.web .homeCellTitle {
-  color: #e74c3c;
-}
-/* line 583, ../scss/base.scss */
-.homeCell.web .homeCellTitle::before {
-  border-left-color: #e74c3c;
+  color: white; 
+  font-weight: 400;
 }
 
 /* line 586, ../scss/base.scss */
 .homeCell.contact .homeCellTitle {
   color: white;
-  font-weight: 600;
+  font-weight: 400;
 }
 /* line 588, ../scss/base.scss */
 .homeCell.contact .homeCellTitle::before {
-  border-left-color: white; /*#00B19D;*/
+  border-left-color: white;
 }
 
 .homeCell.contact:hover .homeCellTitle {
-  color: white; /*#00B19D;*/
+  color: white;
 }
 
 /* line 591, ../scss/base.scss */
 .homeCell.experience .homeCellSubtitle {
-  color: #252525;
+  color: white;
 }
 
 .homeCell.experience:hover .homeCellSubtitle {
-  color: #00B19D;
-}
-
-/* line 595, ../scss/base.scss */
-.homeCell.audio .homeCellSubtitle {
-  color: #f39c12;
-}
-
-/* line 599, ../scss/base.scss */
-.homeCell.web .homeCellSubtitle {
-  color: #e74c3c;
+  color: white;
 }
 
 /* line 603, ../scss/base.scss */
 .homeCell.contact .homeCellSubtitle {
-  color: gainsboro;
+  color: white;
 }
 
 /* line 628, ../scss/base.scss */
@@ -717,6 +608,10 @@ border-bottom: 18px solid gainsboro;
 /* line 635, ../scss/base.scss */
 .greenLink:hover {
   color: #00B19D;
+}
+
+#img-hrule {
+  transform: rotate(90deg);
 }
 
 #img-bio {
