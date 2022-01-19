@@ -1,2 +1,2 @@
 # spherobs
-Source code of my website repository
+Personal website
