@@ -23,7 +23,7 @@ jQuery(function($){
 	
 	$(".homeIcon:not(.creation)").click(function(){
 		data = $(this).data("page");
-		$(".homeTableIcon").stop().slideUp(700);
+		$(".homeTable").stop().slideUp(700);
 		$(".container").hide();
 		$(".container."+data).stop().slideDown(700);
 		$("body").addClass("darken");
