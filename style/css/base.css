@@ -588,6 +588,66 @@ border-bottom: 18px solid gainsboro;
   transform: rotate(90deg);
 }
 
+#popup {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#popup:target {
+  visibility:visible;
+  opacity: 1;
+  background-color: rgba(255,255,255,0.8);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:40px;
+  margin:0 auto;
+  z-index: 99;
+  -webkit-transition:all 0.5s;
+  -moz-transition:all 0.5s;
+  transition:all 0.5s;
+}
+
+@media (min-width: 768px){
+  .popup-container {
+    width:600px;
+  }
+}
+
+@media (max-width: 767px){
+  .popup-container {
+    width:100%;
+  }
+}
+
+.popup-container {
+  width: 660px;
+  height: 400px;
+  margin: 10% auto;
+  padding:30px 50px;
+  background-color: #fff;
+  opacity: 1;
+  color:#3498db;
+  border: 2px solid #333;
+}
+
+a.popup-close {
+  position: relative;
+  background-color: #fff;
+  padding:15px 55px;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 1;
+  color:#333;
+}/* style untuk isi popup */
+
+.popup-title {
+  text-align: left;
+  /*border-bottom: 2px solid #7a7a7a;*/
+  line-height: 20px;
+}
+
 #img1 {
   left: -98px;
   width: 394px;
