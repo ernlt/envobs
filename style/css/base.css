@@ -687,7 +687,8 @@ a.popup-close {
 }
 
 .legend-shom {
-  margin-left: 32px;
+  position: center;
+  margin-top: 5px;
 }
 
 #img1 {
