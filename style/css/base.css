@@ -797,6 +797,14 @@ a.popup-close {
   display: flex;
 }
 
+#img-shom {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 320px;
+  height: 220px;
+  display: flex;
+}
+
 #img-egg {
   margin-top: 20px;
   margin-left: 0px;
