@@ -857,7 +857,7 @@ a.popup-close {
 
 #img-spd1 {
   margin-top: 20px;
-  margin-left: 0px;
+  margin-left: 4px;
   width: 480px;
   height: 320px;
   display: flex;
@@ -865,7 +865,7 @@ a.popup-close {
 
 #img-spd2 {
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 14px;
   width: 480px;
   height: 320px;
   display: flex;
