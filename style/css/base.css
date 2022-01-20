@@ -821,13 +821,22 @@ a.popup-close {
   display: flex;
 }
 
-#img-modcov, #img-tracks {
+#img-modcov {
   margin-top: 20px;
-  margin-left: 0px;
+  margin-left: -5px;
+  width: 800px;
+  height: 290px;
+  display: flex;
+}
+
+#img-tracks {
+  margin-top: 20px;
+  margin-left: -2px;
   width: 800px;
   height: 300px;
   display: flex;
 }
+  
 
 #img-mesh1 {
   margin-top: 20px;
