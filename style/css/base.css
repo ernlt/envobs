@@ -649,12 +649,13 @@ a.popup-close {
 }
 
 .my-legend .legend-title {
-    text-align: left;
+    margin-left: 30px;
     margin-bottom: 2px;
+    text-align: center;
     font-weight: bold;
     font-size: 70%;
     color: #7a7a7a;
-    font-family:"Lato"
+    font-family:"Lato";
 }
 .my-legend .legend-scale ul {
     margin: 0;
@@ -681,14 +682,10 @@ a.popup-close {
     font-size: 70%;
     color: #999;
     clear: both;
+    text-align: center;
 }
 .my-legend a {
     color: #777;
-}
-
-.legend-shom {
-  position: center;
-  margin-top: 5px;
 }
 
 #img1 {
