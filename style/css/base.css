@@ -622,8 +622,8 @@ border-bottom: 18px solid gainsboro;
 }
 
 .popup-container {
-  width: 680px;
-  height: 400px;
+  width: 655px;
+  height: 470px;
   margin: 10% auto;
   padding:30px 50px;
   background-color: #fff;
@@ -635,7 +635,7 @@ border-bottom: 18px solid gainsboro;
 a.popup-close {
   position: relative;
   background-color: #fff;
-  padding:15px 55px;
+  padding: 5px 5px;
   font-size: 15px;
   text-decoration: none;
   line-height: 1;
