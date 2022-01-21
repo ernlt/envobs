@@ -625,6 +625,15 @@ a.popup-close {
   width: 260px;
 }
 
+#img-metop {
+  float: right;
+  width: 260px;
+  height: 160px;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
 #img-types {
   margin-top: 15px;
   margin-left: -50px;
