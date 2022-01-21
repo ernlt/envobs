@@ -626,6 +626,7 @@ a.popup-close {
 }
 
 #img-metop {
+  display: flex;
   float: right;
   width: 260px;
   height: 160px;
