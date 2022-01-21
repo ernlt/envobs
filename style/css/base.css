@@ -622,13 +622,13 @@ a.popup-close {
   color: #7a7a7a;
   margin: 0em;
   padding: 0em;
-  width: 260px;
+  width: 280px;
 }
 
 #img-metop {
   display: flex;
   float: right;
-  width: 280px;
+  width: 260px;
   height: 160px;
   margin-top: 16px;
   margin-bottom: 5px;
