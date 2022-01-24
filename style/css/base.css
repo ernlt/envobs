@@ -751,9 +751,8 @@ a.popup-close {
 }
 
 #img-wksp {
-  margin-top: 20px;
-  margin-left: 0px;
-  width: 500px;
+  margin: 0 auto;
+  width: 700px;
   height: 400px;
   display: flex;
 }
