@@ -755,6 +755,7 @@ a.popup-close {
   width: 800px;
   height: 600px;
   display: flex;
+  border: 1px solid gainsboro;
 }
 
 #img-shom {
