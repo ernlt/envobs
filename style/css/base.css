@@ -518,7 +518,11 @@ a.popup-close {
 }
 .navbar {
   height: 2.5rem;
-  background-color: #333; 
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navlinks {
