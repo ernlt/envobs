@@ -516,9 +516,9 @@ a.popup-close {
 .toplink {
   color: #333;
 }
-.navlinks {
+.navbar {
   height: 2.5rem;
-  color: #333; 
+  background-color: #333; 
 }
 
 #img1 {
