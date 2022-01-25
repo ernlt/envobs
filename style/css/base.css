@@ -47,6 +47,7 @@ body.darken .creationsLink {
   opacity: 0;
 }
 .title, .title2 {
+  margin-bottom: 0px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -63,7 +64,7 @@ body.darken .creationsLink {
   font-size: 25px;
 }
 .title2 {
-  margin-top: 3px;
+  margin-top: 5px;
   font-size: 18px;
 }
 .container {
