@@ -92,17 +92,8 @@ body.darken .creationsLink {
   -webkit-transition: background 0.5s, height 1s;
   transition: background 0.5s, height 1s;
 }
-.back.experience {
+.back.experience, .back.contact {
   background-color: lightgray;
-}
-.back.experience:hover {
-  background-color: lightgray;
-}
-.back.contact {
-  background-color: lightgray;
-}
-.back.contact:hover {
-  background-color:  lightgray;
 }
 .pageTitle {
   margin-top: 0;
@@ -125,7 +116,7 @@ body.darken .creationsLink {
   color: #333;
 }
 .pageSubtitle.experience {
-  color: #252525;
+  color: #333;
 }
 .pageSubtitle.contact {
   color: #333;
@@ -178,12 +169,12 @@ aside {
   flex-direction: row;
 }
 .hline {
-  border-bottom: 1px solid #333;
   width: 800px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
+  border-bottom: 1px solid #333;
 }
 .hline2 {
 border-bottom: 18px solid gainsboro;
@@ -193,21 +184,6 @@ border-bottom: 18px solid gainsboro;
 }
 .vspace2 {
   margin: 5% auto;
-}
-.link {
-  text-decoration: underline;
-}
-.link.experience {
-  color: #3f9ddd;
-}
-.link.experience:hover {
-  color: #2980b9;
-}
-.link.contact {
-  color: #1abc9c;
-}
-.link.contact:hover {
-  color: #16a085;
 }
 .invisible {
   display: none;
@@ -733,7 +709,7 @@ a.popup-close {
 
 #img-wksp {
   margin: 0 auto;
-  width: 800px;
+  width: 796px;
   height: 600px;
   display: flex;
   border: 1px solid gainsboro;
