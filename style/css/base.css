@@ -409,7 +409,10 @@ border-bottom: 18px solid gainsboro;
   margin-bottom: 20px;
   margin-right: 15px;
   text-align: left;
-  color: #00B19D;
+  font-weight: 600;
+  color: #fff;
+  background-color: #00B19D;
+  border: 5px solid #00B19D;
 }
 .greenLink:hover {
   color: #00B19D;
