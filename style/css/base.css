@@ -417,6 +417,17 @@ border-bottom: 18px solid gainsboro;
 .greenLink:hover {
   color: #fff;
 }
+.green2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  text-align: left; 
+  color: #00B19D;
+}
+.green2:hover {
+  color: #00B19D;
+}
+
 #img-hrule {
   transform: rotate(90deg);
 }
