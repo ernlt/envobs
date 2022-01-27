@@ -285,8 +285,8 @@
                 <div class="description">
 			<p>
 				L'algorithme fournit ainsi une répartition statistique des paramètres afin de déterminer les types de nuages et de surfaces présents à l'intérieur d'une région donnée.
-				L'espace des paramètres est de dimension 4, et peut être noté:<br> P = [VIS, IR, σVIS, σIR],
-				où [VIS, IR] sont des paramètres spectraux correspondant aux réflectances et aux températures de brillance, et [σVIS, σIR] sont des paramètres spatiaux associés aux écarts-types locaux,
+				L'espace des paramètres est de dimension 4, et peut être noté: <br> 
+				P = [VIS, IR, σVIS, σIR], où [VIS, IR] sont des paramètres spectraux correspondant aux réflectances et aux températures de brillance, et [σVIS, σIR] sont des paramètres spatiaux associés aux écarts-types locaux,
 				calculés dans un voisinage de 3x3 pixels pour le visible et l'infrarouge et dans un voisinage de 5x5 pixels pour la vapeur d'eau.
 			</p>
                 </div>
@@ -295,14 +295,18 @@
 			<div class="vspace2"></div>
 		        <div class="vspace2"></div>
 			<p>
-				Cette méthode prend en compte deux critères:<br>
-				La minimisation de la distance euclidienne entre les noyaux correspondant aux centres de gravité des classes, au sein d'une même classe, appelée distance intra-classe, et la maximisation de la distance entre les différentes classes, appelée distance inter-classes.<br><br>
+				Cette méthode prend ainsi en compte deux critères:<br>
+				La minimisation de la distance euclidienne entre les noyaux correspondant aux centres de gravité des classes, au sein d'une même classe, appelée distance intra-classe, 
+				et la maximisation de la distance entre les différentes classes, appelée distance inter-classes.
+				<br><br>
+				La figure ci-contre représente d'une part, les positions des centres de gravité des classes dans l'espace [VIS, IR] des paramètres spectraux, 
+				correspondant à la réflectance et la température de brillance; puis d'autre part,
+				l'amplitude des barres d'erreurs centrées sur les centres de gravité qui indiquent la valeur des écarts-types, dans l'espace [σVIS, σIR] des paramètres spatiaux. 
+				<small><i>Source: Sèze et al., 2001, Cloud cover analysis with METEOSAT-5 during INDOEX</i></small>.
+				<br><br>
 				Le processus itératif consiste a effectuer un certain nombre de tirages aléatoires des noyaux. On décide de ne garder que les tirages ayant généré au moins 20 classes.
 				Il est alors possible de construire la distribution des noyaux en fonction d'un nombre maximal d'itérations et selon un critère de convergence.
-				Les classes sont calculées pour une zone bien définie dans l'espace des paramètres P, et pour une heure fixe.
-				<br><br>
-				La figure ci-contre représente d'une part, les positions des centres de gravité des classes dans l'espace [VIS, IR] des paramètres spectraux, correspondant à la réflectance et la température de brillance; puis d'autre part,
-				l'amplitude des barres d'erreurs centrées sur les centres de gravité qui indiquent la valeur des écarts-types, paramètres spatiaux. <small><i>Source: Sèze et al., 2001, Cloud cover analysis with METEOSAT-5 during INDOEX</i></small>. 					
+				Les classes sont calculées pour une zone bien définie dans l'espace des paramètres P, et pour une heure fixe. 					
 			</p>
 			<aside><img src="style/css/img/ccgc2.png" id="img-ccgc1"></aside>
 		</div>
