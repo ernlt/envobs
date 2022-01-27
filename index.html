@@ -231,11 +231,11 @@
 		<div class="description">
 			<article>
 				<p>
-					Les analyses des données DX-B3 donnent accès à des informations statistiques calculées en termes de pourcentages, pour différents paramètres (couverture nuageuse, pressions au sommet
-					des nuages et radiances pour le Visible et l'Infrarouge), et sont utilisées comme références de climatologie. Ces statistiques sont établies pour chaque jour de la période considérée et chaque
+					Les analyses des données DX-B3 donnent accès à des informations statistiques calculées en termes de pourcentages pour différents paramètres: couverture nuageuse, pressions au sommet
+					des nuages et radiances pour le Visible et l'Infrarouge. Ces données sont utilisées comme références de climatologie et les statistiques sont établies pour chaque jour de la période considérée et chaque
 					heure GMT, en prenant en compte tout le disque terrestre de l'imagerie satellitaire. Des comparaisons de distributions sont réalisées, mais aussi des cartes en instantané pixel à pixel.
 					Les données sont traitées séparément heure par heure et les fréquences d'occurrence des nuages dépendent du traitement de chaque pixel par l'algorithme, en fonction du type de masque
-					utilisé (Terre ou Mer). Un pixel nuageux aura la valeur 1 et un pixel non-nuageux la valeur 0. Ces statistiques sont cumulées puis normalisées.
+					nuageux utilisé sur Terre ou sur Mer. Un pixel nuageux aura la valeur 1 et un pixel non-nuageux la valeur 0. Ces statistiques sont cumulées puis normalisées.
 				</p>
 			</article>
 		</div>
@@ -283,13 +283,13 @@
 		        <div class="vspace2"></div>
 			<p>
 				Cette méthode prend en compte deux critères:<br>
-				La minimisation de la distance euclidienne entre les noyaux, correspondant aux centres de gravité des classes, au sein d'une même classe (distance intra-classe), et la maximisation de la distance entre les différentes classes (distance inter- classes).<br><br>
+				La minimisation de la distance euclidienne entre les noyaux correspondant aux centres de gravité des classes, au sein d'une même classe, appelée distance intra-classe, et la maximisation de la distance entre les différentes classes, appelée distance inter-classes.<br><br>
 				Le processus itératif consiste a effectuer un certain nombre de tirages aléatoires des noyaux. On décide de ne garder que les tirages ayant généré au moins 20 classes.
 				Il est alors possible de construire la distribution des noyaux en fonction d'un nombre maximal d'itérations et selon un critère de convergence.
 				Les classes sont calculées pour une zone bien définie dans l'espace des paramètres P, et pour une heure fixe.
 				<br><br>
 				La figure ci-contre représente d'une part, les positions des centres de gravité des classes dans l'espace [VIS, IR] des paramètres spectraux, correspondant à la réflectance et la température de brillance; puis d'autre part,
-				l'amplitude des barres d'erreurs centrées sur les centres de gravité qui indiquent la valeur des écarts-types, paramètres spatiaux. <i>Sèze et al., 2001, Cloud cover analysis with METEOSAT-5 during INDOEX</i>. 					
+				l'amplitude des barres d'erreurs centrées sur les centres de gravité qui indiquent la valeur des écarts-types, paramètres spatiaux (<i>Sèze et al., 2001, Cloud cover analysis with METEOSAT-5 during INDOEX</i>). 					
 			</p>
 			<aside><img src="style/css/img/ccgc2.png" id="img-ccgc1"></aside>
 		</div>
@@ -297,7 +297,7 @@
 		<div class="vspace2"></div>
 		<div class="description">
 				<p>
-					On cherche ensuite à représenter l'évolution temporelle des distributions, en générant des noyaux pour des instantanés (slots)  inférieurs et supérieurs à un slot de référence (i.e les demi-heures précédant et suivant 12h GMT, l'heure de référence).
+					On cherche ensuite à représenter l'évolution temporelle des distributions, en générant des noyaux pour des instantanés (slots) inférieurs et supérieurs à un slot de référence (i.e les demi-heures précédant et suivant 12h GMT, l'heure de référence).
 					Cette procédure permet d'obtenir une bonne continuité entre la construction des différentes classifications pour plusieurs heures successives.
 					Cette méthode produit ainsi en sortie un ensemble de classes de centres de gravité pour chacune des heures GMT.
 					La figure ci-contre représente l'évolution temporelle en un jour donné, par comparaison de la superposition de deux tirages aléatoires dans l'espace de paramètres [VIS, IR]. De manière générale, il est difficile de faire une bonne discrimination du type de nuages près de la surface, dû à une grande variabilité spatiale d'un pixel à l'autre.
