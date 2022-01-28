@@ -60,6 +60,9 @@
 		</div>
 	</div>
 
+	<!--====================-->
+        <!-- METEO
+	<!--====================-->
 	<div class="container meteo invisible">
 		<div class="back experience unselect">Retour ▼</div>
 		<h2 class="pageTitle experience">Météorologie</h2>
@@ -348,6 +351,9 @@
 		</div>
 	</div>
 
+	<!--====================-->
+        <!-- OCEANO
+	<!--====================-->
 	<div class="container oceano invisible">
 		<div class="back experience unselect">Retour ▼</div>
 		<h2 class="pageTitle experience">Océanographie</h2>
@@ -582,6 +588,9 @@
 		</div>	
 	</div>
 
+	<!--====================-->
+        <!-- CLIMAT
+	<!--====================-->
 	<div class="container climate invisible">
 		<div class="back experience unselect">Retour ▼</div>
 		<h2 class="pageTitle experience">Climat</h2>
@@ -702,7 +711,6 @@
 		<div class="vspace"></div>
 
 		<h3 class="pageSubtitle meteo">Méthode</h3>
-
 		<div class="description">
 			<p>
 				Les outils développés dans ce projet ont permis de tirer pleinement parti d'une nouvelle information, à savoir la concentration de la colonne à haute résolution spatiale.
@@ -716,103 +724,107 @@
 		<div class="vspace2"></div>
 		<div class="description">
 			<p>
-				L'idée première est de déterminer l'expression analytique d'un flux. D'après la loi de conservation de la masse, on peut obtenir une équation reliant le flux à certains paramètres du modèle analytique d'inversion.
-				On peut noter que le flux dépend en particulier du vent, à différents niveaux d'altitudes. Dans le cas d'une source ponctuelle constante, on peut déterminer la valeur du flux "estimé" à partir du résultat de l'inversion, et pour un vent localisé au niveau de la source.
-				Il sera alors possible de comparer les séries temporelles de flux estimés et "réels". Les flux réels correspondent alors à la valeur constante d'émission de la source. On procède de la même manière dans le cas d'une distribution des émissions variables dans le temps.
-				On constate ainsi des décalages au temps d'observation du satellite, en termes d'intensité, liés à l'incertitude des hauteurs d'émissions lors du transport atmosphérique du panache.
-			</div>
-			<div class="vspace"></div>
-			<div class="description">
-				<img src="style/css/img/ts1.png" id="img-ts1" class="demo-img">
-				<aside><img src="style/css/img/ts2.png" id="img-ts2" class="demo-img"></aside>
-			</div>
-			<div class="vspace2"></div>
-			<div class="description">
-				<p>
-					L'étude de sensibilité effectuée au cours de ces simulations a montré que les principales sources d'incertitude sur l'estimation des  flux de surface, peuvent être liées à la modification de certains paramètres.
-					Par exemple, la variation du rayon d'intégration de la concentration dans le modèle d'inversion, l'incertitude liée au choix du niveau vertical du vent, l'impact de bruits sur les observations. Ces incertitudes sont d'autant plus grandes si l'on considère des émissions hétérogènes.
-					En ce qui concerne les données des flux de surface à l'échelle de la ville de Paris, un accord a été établi avec l'organisme public AIRPARIF, qui a fourni un inventaire des émissions anthropiques de CO<sub>2</sub>. On dispose ainsi d'une liste d'émissions réalistes , définie selon un code par secteur.
-					En considérant le total des émissions, il est alors possible de distinguer parmi toutes les contributions, le signal le plus représentatif des valeurs d'émissions, en terme d'intensité. La résolution spatio-temporelle est de 1 x 1 km² avec une fréquence horaire. Il est possible de distinguer trois types d'émissions, représentées par les trois figures ci-dessous.
-					Elles peuvent correspondre respectivement au trafic routier, au chauffage résidentiel et commercial et aux diverses industries.
-				</p>
-			</div>
-			<div class="description">
-				<img src="style/css/img/emis.png" id="img-emis" class="demo-img">
-			</div>
-			<div class="vspace2"></div>
-			<div class="description">
-				<p>
-					L'objectif consiste à analyser et différencier les émissions provenant de ces secteurs: soit à partir des observations satellites, soit à partir des données au sol.
-					On s'est intéressé ainsi aux mesures acquises par une station en banlieue parisienne, représentées par des séries temporelles de concentrations de CO<sub>2</sub> issues des émissions anthropiques et biosphériques,
-					sur une période de 5 jours pour le mois d'octobre 2010. On peut vérifier que les flux anthropiques ont toujours des valeurs positives, et que les flux biosphériques peuvent prendre des valeurs négatives.
-					A partir de ces séries, on va chercher à simuler l'influence des flux aux heures précédant l'heure d'observation du satellite, en attribuant une valeur nulle en dehors de ces temps et en conservant la valeur des flux aux temps donnés.
-				</p>
-			</div>
+			L'idée première est de déterminer l'expression analytique d'un flux. D'après la loi de conservation de la masse, on peut obtenir une équation reliant le flux à certains paramètres du modèle analytique d'inversion.
+			On peut noter que le flux dépend en particulier du vent, à différents niveaux d'altitudes. Dans le cas d'une source ponctuelle constante, on peut déterminer la valeur du flux "estimé" à partir du résultat de l'inversion, et pour un vent localisé au niveau de la source.
+			Il sera alors possible de comparer les séries temporelles de flux estimés et "réels". Les flux réels correspondent alors à la valeur constante d'émission de la source. On procède de la même manière dans le cas d'une distribution des émissions variables dans le temps.
+			On constate ainsi des décalages au temps d'observation du satellite, en termes d'intensité, liés à l'incertitude des hauteurs d'émissions lors du transport atmosphérique du panache.
+		</div>
+		<div class="vspace"></div>
+		<div class="description">
+			<img src="style/css/img/ts1.png" id="img-ts1" class="demo-img">
+			<aside><img src="style/css/img/ts2.png" id="img-ts2" class="demo-img"></aside>
+		</div>
+		<div class="vspace2"></div>
+		<div class="description">
+			<p>
+				L'étude de sensibilité effectuée au cours de ces simulations a montré que les principales sources d'incertitude sur l'estimation des  flux de surface, peuvent être liées à la modification de certains paramètres.
+				Par exemple, la variation du rayon d'intégration de la concentration dans le modèle d'inversion, l'incertitude liée au choix du niveau vertical du vent, l'impact de bruits sur les observations. Ces incertitudes sont d'autant plus grandes si l'on considère des émissions hétérogènes.
+				En ce qui concerne les données des flux de surface à l'échelle de la ville de Paris, un accord a été établi avec l'organisme public AIRPARIF, qui a fourni un inventaire des émissions anthropiques de CO<sub>2</sub>. On dispose ainsi d'une liste d'émissions réalistes , définie selon un code par secteur.
+				En considérant le total des émissions, il est alors possible de distinguer parmi toutes les contributions, le signal le plus représentatif des valeurs d'émissions, en terme d'intensité. La résolution spatio-temporelle est de 1 x 1 km² avec une fréquence horaire. Il est possible de distinguer trois types d'émissions, représentées par les trois figures ci-dessous.
+				Elles peuvent correspondre respectivement au trafic routier, au chauffage résidentiel et commercial et aux diverses industries.
+			</p>
+		</div>
+		<div class="description">
+			<img src="style/css/img/emis.png" id="img-emis" class="demo-img">
+		</div>
+		<div class="vspace2"></div>
+		<div class="description">
+			<p>
+				L'objectif consiste à analyser et différencier les émissions provenant de ces secteurs: soit à partir des observations satellites, soit à partir des données au sol.
+				On s'est intéressé ainsi aux mesures acquises par une station en banlieue parisienne, représentées par des séries temporelles de concentrations de CO<sub>2</sub> issues des émissions anthropiques et biosphériques,
+				sur une période de 5 jours pour le mois d'octobre 2010. On peut vérifier que les flux anthropiques ont toujours des valeurs positives, et que les flux biosphériques peuvent prendre des valeurs négatives.
+				A partir de ces séries, on va chercher à simuler l'influence des flux aux heures précédant l'heure d'observation du satellite, en attribuant une valeur nulle en dehors de ces temps et en conservant la valeur des flux aux temps donnés.
+			</p>
+		</div>
 
-			<div class="description">
-				<img src="style/css/img/ant1.png" id="img-ant1" class="demo-img">
-				<aside><img src="style/css/img/ant2.png" id="img-ant2" class="demo-img"></aside>
-			</div>
-			<div class="vspace2"></div>
-			<div class="description">
-				<img src="style/css/img/bio1.png" id="img-ant1" class="demo-img">
-				<aside><img src="style/css/img/bio2.png" id="img-bio2" class="demo-img"></aside>
-			</div>
-			<div class="vspace2"></div>
-			<div class="description">
-				<p>
-					Il est alors possible de construire des cartes de concentration de CO<sub>2</sub> au temps d'assimilation du satellite (cf. flèches verticales noires sur les figures ci-dessus), pour analyser les profils spatio-temporels des fonctions de réponses.
-					Dans un premier temps, on cherche à réaliser une inversion analytique du profil temporel des émissions totales, heure par heure; puis, à réaliser une inversion sectorielle, pour chaque secteur d'émission, dont le profil temporel est connu.
-					De cette manière, il est possible de calculer les fonctions de réponses associées à ces deux types d'inversion, qui vont permettre de quantifier l'impact des émissions sur la concentration de CO<sub>2</sub>, au temps de passage du satellite, et de déterminer les différents profils temporels et structures spatiales.
-					Pour les émissions biosphériques, il n'y a pas à proprement parler de structure de panache, car la diffusion est plus importante.
-				</p>
-			</div>
+		<div class="description">
+			<img src="style/css/img/ant1.png" id="img-ant1" class="demo-img">
+			<aside><img src="style/css/img/ant2.png" id="img-ant2" class="demo-img"></aside>
+		</div>
+		<div class="vspace2"></div>
+		<div class="description">
+			<img src="style/css/img/bio1.png" id="img-ant1" class="demo-img">
+			<aside><img src="style/css/img/bio2.png" id="img-bio2" class="demo-img"></aside>
+		</div>
+		<div class="vspace2"></div>
+		<div class="description">
+			<p>
+				Il est alors possible de construire des cartes de concentration de CO<sub>2</sub> au temps d'assimilation du satellite (cf. flèches verticales noires sur les figures ci-dessus), pour analyser les profils spatio-temporels des fonctions de réponses.
+				Dans un premier temps, on cherche à réaliser une inversion analytique du profil temporel des émissions totales, heure par heure; puis, à réaliser une inversion sectorielle, pour chaque secteur d'émission, dont le profil temporel est connu.
+				De cette manière, il est possible de calculer les fonctions de réponses associées à ces deux types d'inversion, qui vont permettre de quantifier l'impact des émissions sur la concentration de CO<sub>2</sub>, au temps de passage du satellite, et de déterminer les différents profils temporels et structures spatiales.
+				Pour les émissions biosphériques, il n'y a pas à proprement parler de structure de panache, car la diffusion est plus importante.
+			</p>
+		</div>
 
-			<div class="description">
-				<img src="style/css/img/simu4.gif" id="img-sim2" class="demo-img">
-				<aside><img src="style/css/img/simu5.png" id="img-sim3" class="demo-img"></aside>
-			</div>
-			<div class="vspace2"></div>
-			<div class="vspace2"></div>
-			<div class="part"></div>
-			<div class="vspace"></div>
-			<div class="vspace"></div>
+		<div class="description">
+			<img src="style/css/img/simu4.gif" id="img-sim2" class="demo-img">
+			<aside><img src="style/css/img/simu5.png" id="img-sim3" class="demo-img"></aside>
+		</div>
+		
+		<div class="vspace2"></div>
+		<div class="vspace2"></div>
+		<div class="part"></div>
+		<div class="vspace"></div>
+		<div class="vspace"></div>
 
-			<h3 class="pageSubtitle meteo">Article</h3>
-			<div class="description">
-				<p>
-					Broquet, G., Bréon, F.-M., Renault, E., Buchwitz, M., Reuter, M., Bovensmann, H.,
-					Chevallier, F., Wu, L., and Ciais, P. : The potential of satellite spectro-imagery
-					for monitoring CO<sub>2</sub> emissions from large cities, Atmos. Meas. Tech., 11, 681708,
-					https ://doi.org/10.5194/amt-11-681-2018, 2018.<br><br>
-					<a class="greenLink" target="_blank" href="https://www.atmos-meas-tech.net/11/681/2018/amt-11-681-2018.html">Article</a>
-					<a class="greenLink" target="_blank" href="https://www.nies.go.jp/soc/events/iwggms9/pdf/posters/27_GregoireBroquet.pdf">Poster</a>
-				</p>
-			</div>
+		<h3 class="pageSubtitle meteo">Article</h3>
+		<div class="description">
+			<p>
+				Broquet, G., Bréon, F.-M., Renault, E., Buchwitz, M., Reuter, M., Bovensmann, H.,
+				Chevallier, F., Wu, L., and Ciais, P. : The potential of satellite spectro-imagery
+				for monitoring CO<sub>2</sub> emissions from large cities, Atmos. Meas. Tech., 11, 681708,
+				https ://doi.org/10.5194/amt-11-681-2018, 2018.<br><br>
+				<a class="greenLink" target="_blank" href="https://www.atmos-meas-tech.net/11/681/2018/amt-11-681-2018.html">Article</a>
+				<a class="greenLink" target="_blank" href="https://www.nies.go.jp/soc/events/iwggms9/pdf/posters/27_GregoireBroquet.pdf">Poster</a>
+			</p>
+		</div>
 			
-			<div class="vspace"></div>
+		<div class="vspace"></div>
 
-			<h3 class="pageSubtitle meteo">Rapport de mission de sélection</h3>
-			<div class="description">
-				<p>
-					Un rapport complet de l'ESA est disponible en anglais, sous l'intitulé suivant: Report for Mission Selection: CarbonSat (ESA SP-1330/1, June 2015).
-					Le paragraphe 7.4.2 p. 170 du document se réfère à l'étude présentée ici.
-					<br><br><a class="greenLink" target="_blank" href="https://esamultimedia.esa.int/docs/EarthObservation/SP1330-1_CarbonSat.pdf">Rapport</a>
-				</p>
-			</div>
+		<h3 class="pageSubtitle meteo">Rapport de mission de sélection</h3>
+		<div class="description">
+			<p>
+				Un rapport complet de l'ESA est disponible en anglais, sous l'intitulé suivant: Report for Mission Selection: CarbonSat (ESA SP-1330/1, June 2015).
+				Le paragraphe 7.4.2 p. 170 du document se réfère à l'étude présentée ici.
+				<br><br><a class="greenLink" target="_blank" href="https://esamultimedia.esa.int/docs/EarthObservation/SP1330-1_CarbonSat.pdf">Rapport</a>
+			</p>
+		</div>
 
-			<div class="top">
-		            <div class="vspace2"></div>
-		            <div class="vspace2"></div>
-		            <a class="toplink" href="#top">Haut de page ▲</a>
-		        </div>
+		<div class="top">
+		        <div class="vspace2"></div>
+		        <div class="vspace2"></div>
+			<a class="toplink" href="#top">Haut de page ▲</a>
+		</div>
 	</div>
 
+        <!--====================-->
+        <!-- SIG 
+	<!--====================-->
 	<div class="container gis invisible">
-			<div class="back experience unselect">Retour ▼</div>
-			<h2 class="pageTitle experience">SIG</h2>
+		<div class="back experience unselect">Retour ▼</div>
+		<h2 class="pageTitle experience">SIG</h2>
 
-			<div class="project">
+		<div class="project">
 			<p>
 				<span class="span">■ <strong>Lab-STICC</strong></span></br></br>
 				<span class="span">Laboratoire des Sciences et Techniques de l'Information, de la Communication et de la Connaissance</span> <br/> UMR 6285 CNRS, Vannes, France</span><br/>
@@ -820,155 +832,154 @@
 				<span class="span">Référent</span>: Erwan Bocher, Ingénieur de Recherche CNRS</span><br/>
 				<span class="span">Projet</span>: SLIM: Surface Land Information Mapping - CNRS, Météo-France, ECMWF</span><br/>
 			</p>
-			</div>
+		</div>
 
-			<div class="vspace"></div>
-			<div class="vspace2"></div>
+		<div class="vspace"></div>
+		<div class="vspace2"></div>
 						
-			<h3 class="pageSubtitle meteo">Etude</h3>
-				
-			<div class="description">
-				<p>
-					L'objectif du projet SLIM porté par le Copernicus Climate Change Service (C3S) consiste en la production et l'intégration de nouveaux paramètres de surface dans les modèles dédiés de Météo-France (Town Energy Balance, Masson 2000) et de l'ECMWF  
-					afin d'affiner leurs simulations. Ces indicateurs géoclimatiques sont issus des sorties du logiciel open source GeoClimate (Bocher et al., 2021). Une première phase de l'étude a été d'adapter dans la chaîne GeoClimate, le workflow des données provenant de la base OpenStreetMap via une API, 
-					et d'autre part, d'implémenter un algorithme pour réaliser l'aggrégation spatiale des données sur une grille de calcul. 
-                                        Dans un second temps, le déploiement de la chaîne GeoClimate sur les serveurs HPC de l'ECMWF a permis de calculer ces indicateurs sur un maillage à l'échelle de l'Europe.
+		<h3 class="pageSubtitle meteo">Etude</h3>	
+		<div class="description">
+			<p>
+				L'objectif du projet SLIM porté par le Copernicus Climate Change Service (C3S) consiste en la production et l'intégration de nouveaux paramètres de surface dans les modèles dédiés de Météo-France (Town Energy Balance, Masson 2000) et de l'ECMWF  
+				afin d'affiner leurs simulations. Ces indicateurs géoclimatiques sont issus des sorties du logiciel open source GeoClimate (Bocher et al., 2021). Une première phase de l'étude a été d'adapter dans la chaîne GeoClimate, le workflow des données provenant de la base OpenStreetMap via une API, 
+				et d'autre part, d'implémenter un algorithme pour réaliser l'aggrégation spatiale des données sur une grille de calcul. 
+                                Dans un second temps, le déploiement de la chaîne GeoClimate sur les serveurs HPC de l'ECMWF a permis de calculer ces indicateurs sur un maillage à l'échelle de l'Europe.
 					
-					</br></br>
-					Liens associés au projet:</br>
-					<a class="link" target="_blank" title="geoclimate" href="https://github.com/orbisgis/geoclimate">https://github.com/orbisgis/geoclimate</a></br>
-					<a class="link" target="_blank" title="geoclimate" href="https://climate.copernicus.eu/">https://climate.copernicus.eu</a>
-					
-				</p>
-			</div>
+				</br></br>
+				Liens associés au projet:</br>
+				<a class="link" target="_blank" title="geoclimate" href="https://github.com/orbisgis/geoclimate">https://github.com/orbisgis/geoclimate</a></br>
+				<a class="link" target="_blank" title="geoclimate" href="https://climate.copernicus.eu/">https://climate.copernicus.eu</a>
+			</p>
+		</div>
 
-			<div class="vspace"></div>
-			<div class="vspace"></div>
-			<div class="part"></div>
-			<div class="vspace"></div>
-			<div class="vspace"></div>
+		<div class="vspace"></div>
+		<div class="vspace"></div>
+		<div class="part"></div>
+		<div class="vspace"></div>
+		<div class="vspace"></div>
+		
+		<h3 class="pageSubtitle meteo">Produit</h3>	
+		<div class="description">
+			<p>
+				Le produit final obtenu est une carte de type raster à l'échelle de l'Europe.
+				Cette carte numérique a été obtenue en plusieurs étapes, par la concaténation de fichiers contenant des domaines géographiques de 10x10 km², pour un type d'indicateur donné.
+				L'objectif étant de fournir une carte raster où sont aggrégés les différents types d'indicateurs dans des cellules de 1km².
+			</p>
+		</div>
+		<div class="description">
+			<img src="style/css/img/europe-min.png" id="img-europe" class="demo-img">
+		</div>
 
-			<h3 class="pageSubtitle meteo">Produit</h3>
-				
-			<div class="description">
-				<p>
-					Le produit final obtenu est une carte de type raster à l'échelle de l'Europe.
-					Cette carte numérique a été obtenue en plusieurs étapes, par la concaténation de fichiers contenant des domaines géographiques de 10x10 km², pour un type d'indicateur donné.
-					L'objectif étant de fournir une carte raster où sont aggrégés les différents types d'indicateurs dans des cellules de 1km².
-				</p>
-			</div>
-			<div class="description">
-				<img src="style/css/img/europe-min.png" id="img-europe" class="demo-img">
-			</div>
+		<div class="vspace2"></div>
+		<div class="vspace2"></div>
+		<div class="part"></div>
+		<div class="vspace"></div>
+		<div class="vspace"></div>
 
-			<div class="vspace2"></div>
-			<div class="vspace2"></div>
-			<div class="part"></div>
-			<div class="vspace"></div>
-			<div class="vspace"></div>
+		<h3 class="pageSubtitle meteo">Méthode</h3>
+		<div class="description">
+			<p>
+				La grille de référence utilisée pour les calculs est à l'origine une grille globale (Integrated Forcast System), cartésienne en latitudes-longitudes, avec une résolution spatiale de 1°/120 (30" soit environ 1km).
+				Cette grille a été fournie par l'ECMWF sous la forme d'un fichier de masque Terre-Mer au format GRIB, puis converti au format NetCDF.
+				Les valeurs de longitudes initialement comprises entre 0 et 360°, ont été transformées pour obtenir des valeurs comprises entre -180° et +180°, afin de travailler sur une grille continue.
+				Le fichier a ensuite été tronqué afin d'établir une zone d'emprise à l'échelle de l'Europe. Les dimensions de cette nouvelle zone d'intérêt sont désormais de 4800 x 5040 pixels.
+				<br><br>
+				La figure 1 ci-contre est un aperçu de l'extraction de la nouvelle grille, construite avec un pas (échantillonnage) de 10 pixels à partir de la grille IFS 1km tronquée.
+				L'extraction des coordonnées Sud-Ouest et Nord-Est de chaque domaine se fait alors par indexation dans les listes de latitudes-longitudes de cette grille de destination (ponts rouges).
+			</p>
+			<aside>
+				<img src="style/css/img/domain.png" id="img-dom" class="demo-img">
+			</aside>
+		</div>
+		<div class="description">
+			<p>
+				La chaîne de traitement GeoClimate est implémentée par un workflow de données. Ce workflow a est lui-même été adapté selon
+				une méthodologie développée afin d'extraire et de formater les données OpenStreetMap en tant que données vectorielles, pour construire des couches SIG
+				conformes au modèle de données d'entrée de la chaîne GeoClimate. Ceci permet ensuite de calculer des indicateurs géospatiaux
+				et générer les principales variables LCZ à l'échelle de l'Unité Spatiale de Référence (RSU).<br><br>
+				La figure ci-contre représente un schéma simplifié du workflow OSM utilisé par GeoClimate.
+			</p>
+			<aside>
+				<img src="style/css/img/scheme.png" id="img-sch" class="demo-img">
+			</aside>
+		</div>
 
-			<h3 class="pageSubtitle meteo">Méthode</h3>
+		<div class="vspace"></div>
 
-			<div class="description">
-				<p>
-					La grille de référence utilisée pour les calculs est à l'origine une grille globale (Integrated Forcast System), cartésienne en latitudes-longitudes, avec une résolution spatiale de 1°/120 (30" soit environ 1km).
-					Cette grille a été fournie par l'ECMWF sous la forme d'un fichier de masque Terre-Mer au format GRIB, puis converti au format NetCDF.
-					Les valeurs de longitudes initialement comprises entre 0 et 360°, ont été transformées pour obtenir des valeurs comprises entre -180° et +180°, afin de travailler sur une grille continue.
-					Le fichier a ensuite été tronqué afin d'établir une zone d'emprise à l'échelle de l'Europe. Les dimensions de cette nouvelle zone d'intérêt sont désormais de 4800 x 5040 pixels.
-					<br><br>
-					La figure 1 ci-contre est un aperçu de l'extraction de la nouvelle grille, construite avec un pas (échantillonnage) de 10 pixels à partir de la grille IFS 1km tronquée.
-					L'extraction des coordonnées Sud-Ouest et Nord-Est de chaque domaine se fait alors par indexation dans les listes de latitudes-longitudes de cette grille de destination (ponts rouges).
-				</p>
-				<aside>
-					<img src="style/css/img/domain.png" id="img-dom" class="demo-img">
-				</aside>
-			</div>
-			<div class="description">
-				<p>
-					La chaîne de traitement GeoClimate est implémentée par un workflow de données. Ce workflow a est lui-même été adapté selon
-					une méthodologie développée afin d'extraire et de formater les données OpenStreetMap en tant que données vectorielles, pour construire des couches SIG
-					conformes au modèle de données d'entrée de la chaîne GeoClimate. Ceci permet ensuite de calculer des indicateurs géospatiaux
-					et générer les principales variables LCZ à l'échelle de l'Unité Spatiale de Référence (RSU).<br><br>
-					La figure ci-contre représente un schéma simplifié du workflow OSM utilisé par GeoClimate.
-				</p>
-				<aside>
-					<img src="style/css/img/scheme.png" id="img-sch" class="demo-img">
-				</aside>
-			</div>
+		<div class="description">
+			<p>
+				L'ensemble des figures ci-dessous représente des cartes vectorielles construites à partir des fichiers de sortie générés par la chaîne.
+	                  	La ville de Reading près de Londres, est choisie pour illustrer ce cas test.
+	                  	Ces cartes représentent la distribution spatiale des indicateurs de surface, calculés aux échelles du bâtiment et des RSU.
+	                  	A titre d'exemple, les cartes suivantes ont été réalisées :<br><br>
 
-			<div class="vspace"></div>
+				-  La première carte illustre l'indicateur des hauteurs de toit estimées. </br>
+				-  La deuxième carte montre la fraction de LCZ correpondant au type bâtiment.</br>
+				-  La troisième carte représente la superficie moyenne pondérée des hauteurs de toit estimées. </br>
+				-  Les trois dernières cartes représentent les fractions LCZ d'imperméabilité et de végétation. </br>
+			</p>
+		</div>
+		<div class="description">
+			<img src="style/css/img/HR.png" id="img-indic" class="demo-img">
+			<aside><img src="style/css/img/BFLCZ.png" id="img-indic" class="demo-img"></aside>
+			<aside><img src="style/css/img/AVG.png" id="img-indic" class="demo-img"></aside>
+		</div>
+		<div class="description">
+			<img src="style/css/img/IMP.png" id="img-indic" class="demo-img">
+			<aside><img src="style/css/img/HVF.png" id="img-indic" class="demo-img"></aside>
+			<aside><img src="style/css/img/LVF.png" id="img-indic" class="demo-img"></aside>
+		</div>
+		<div class="vspace"></div>
+		<div class="description">
+			<p>
+				Une fois que tous les indicateurs de surface ont été calculés, la classification des LCZ peut être effectuée à l'aide d'un algorithme de Machine Learning
+                                de type Random Forest.
+		                La carte ci-dessous montre au premier plan, le même domaine sur lequel sont tracées les fractions de type LCZ à l'échelle du RSU, qui définissent la typologie urbaine de la zone.
+			</p>
+		</div>
+		<div class="description">
+			<img src="style/css/img/TYPO.png" id="img-typo" class="demo-img">
+		</div>
+                <div class="vspace2"></div>
+		<div class="vspace2"></div>
+		<div class="description">
+			<p>
+				Sur l'ensemble des figures ci-dessous, celle en haut à gauche représente un domaine de 10x10 km² au dessus de Paris (affiché dans le système métrique ici, et n'a pas été reprojeté en WGS84).
+				Il s'agit du résultat de l'algorithme de classification obtenu à partir des données des indicateurs de surfaces. L'adaptation de la chaîne de traitement GeoClimate a conduit à l'implémenation d'un algorithme de rasterisation des données
+				pour chaque domaine d'intérêt constituant une zone d'étude, et permet d'aggréger ces indicateurs sur une grille de calculs.
+				Les deux autres figures correspondent au domaine précédent pris sur Paris, où chaque type d'indicateur et de LCZ a été aggrégé spatialement
+				dans des cellules de 1km². 
+			</p>
+		</div>
+		<div class="description">
+			<img src="style/css/img/paris.png" id="img-zone2" class="demo-img">
+			<aside><img src="style/css/img/ascii_grids.png" id="img-asc1" class="demo-img"></aside>
+		</div>
+		<div class="description">
+			<img src="style/css/img/ascii_grids2.png" id="img-asc2" class="demo-img">
+		</div>
+		
+		<div class="vspace2"></div>
+		<div class="vspace2"></div>
+		<div class="part"></div>
+		<div class="vspace"></div>
+		<div class="vspace"></div>
 
-			<div class="description">
-				<p>
-				  L'ensemble des figures ci-dessous représente des cartes vectorielles construites à partir des fichiers de sortie générés par la chaîne.
-	                          La ville de Reading près de Londres, est choisie pour illustrer ce cas test.
-	                          Ces cartes représentent la distribution spatiale des indicateurs de surface, calculés aux échelles du bâtiment et des RSU.
-	                          A titre d'exemple, les cartes suivantes ont été réalisées :<br><br>
-
-					-  La première carte illustre l'indicateur des hauteurs de toit estimées. </br>
-					-  La deuxième carte montre la fraction de LCZ correpondant au type bâtiment.</br>
-					-  La troisième carte représente la superficie moyenne pondérée des hauteurs de toit estimées. </br>
-					-  Les trois dernières cartes représentent les fractions LCZ d'imperméabilité et de végétation. </br>
-				</p>
-			</div>
-
-			<div class="description">
-				<img src="style/css/img/HR.png" id="img-indic" class="demo-img">
-				<aside><img src="style/css/img/BFLCZ.png" id="img-indic" class="demo-img"></aside>
-				<aside><img src="style/css/img/AVG.png" id="img-indic" class="demo-img"></aside>
-			</div>
-			<div class="description">
-				<img src="style/css/img/IMP.png" id="img-indic" class="demo-img">
-				<aside><img src="style/css/img/HVF.png" id="img-indic" class="demo-img"></aside>
-				<aside><img src="style/css/img/LVF.png" id="img-indic" class="demo-img"></aside>
-			</div>
-			<div class="vspace"></div>
-			<div class="description">
-				<p>
-					Une fois que tous les indicateurs de surface ont été calculés, la classification des LCZ peut être effectuée à l'aide d'un algorithme de Machine Learning
-                                        de type Random Forest.
-			                La carte ci-dessous montre au premier plan, le même domaine sur lequel sont tracées les fractions de type LCZ à l'échelle du RSU, qui définissent la typologie urbaine de la zone.
-				</p>
-			</div>
-			<div class="description">
-				<img src="style/css/img/TYPO.png" id="img-typo" class="demo-img">
-			</div>
-                        <div class="vspace2"></div>
-			<div class="vspace2"></div>
-			<div class="description">
-				<p>
-					Sur l'ensemble des figures ci-dessous, celle en haut à gauche représente un domaine de 10x10 km² au dessus de Paris (affiché dans le système métrique ici, et n'a pas été reprojeté en WGS84).
-					Il s'agit du résultat de l'algorithme de classification obtenu à partir des données des indicateurs de surfaces. L'adaptation de la chaîne de traitement GeoClimate a conduit à l'implémenation d'un algorithme de rasterisation des données
-					pour chaque domaine d'intérêt constituant une zone d'étude, et permet d'aggréger ces indicateurs sur une grille de calculs.
-					Les deux autres figures correspondent au domaine précédent pris sur Paris, où chaque type d'indicateur et de LCZ a été aggrégé spatialement
-					dans des cellules de 1km². 
-				</p>
-			</div>
-			<div class="description">
-				<img src="style/css/img/paris.png" id="img-zone2" class="demo-img">
-				<aside><img src="style/css/img/ascii_grids.png" id="img-asc1" class="demo-img"></aside>
-			</div>
-			<div class="description">
-				<img src="style/css/img/ascii_grids2.png" id="img-asc2" class="demo-img">
-			</div>
-			<div class="vspace2"></div>
-			<div class="vspace2"></div>
-			<div class="part"></div>
-			<div class="vspace"></div>
-			<div class="vspace"></div>
-
-			<h3 class="pageSubtitle meteo">Présentation</h3>
-			<span class="span">■ Réunion de fin de projet</span><br/>
-			<span class="grey">SLIM: GeoClimate tool tutorial for Urban Mapping on HPCF</span><br><br>
-			<a class="greenLink" target="_blank" href="ressources/SLIM_GEOCLIMATE_HPCF_051021.pdf">Support</a>
+		<h3 class="pageSubtitle meteo">Présentation</h3>
+		<span class="span">■ Réunion de fin de projet</span><br/>
+		<span class="grey">SLIM: GeoClimate tool tutorial for Urban Mapping on HPCF</span><br><br>
+		<a class="greenLink" target="_blank" href="ressources/SLIM_GEOCLIMATE_HPCF_051021.pdf">Support</a>
       			
-                        <div class="top">
-		            <div class="vspace2"></div>
-		            <div class="vspace2"></div>
-		            <a class="toplink" href="#top">Haut de page ▲</a>
-		        </div>
+                <div class="top">
+			<div class="vspace2"></div>
+		        <div class="vspace2"></div>
+		        <a class="toplink" href="#top">Haut de page ▲</a>
+		</div>
 	</div>
 
+	<!--====================-->
+        <!-- A PROPOS
+	<!--====================-->
 	<div class="container bio invisible">
 		<div class="back contact unselect">Retour ▼</div>
 		<h2 class="pageTitle contact">A propos</h2>
@@ -980,7 +991,6 @@
 		<div class="vspace"></div>
 			
     		<h3 class="pageSubtitle contact">Parcours</h3>
-			
 		<p>
 			Je travaille dans le milieu de la recherche scientifique comme Ingénieur d'études, après avoir obtenu un diplôme de Master en Mathématiques Fondamentales et Appliquées à l'Université de Bretagne Sud en 2011.
 			C'est par l'intermédiaire de postes CNRS que j'évolue au sein d'Unités Mixtes de Recherches pour des laboratoires universitaires et instituts
@@ -991,7 +1001,7 @@
 			Ces études sont liées à des missions de terrains (issues de campagnes en mer, ou autres) mais aussi à des missions satellitaires d'observation de la Terre, afin de générer et d'évaluer des produits
 			géophysiques dérivés de mesures d'instruments de télédétection spatiale. Les études portent sur les domaines de la physique de l'atmosphère et des océans.
 		</p>
-		<p> Ces différents projets s'inscrivent dans un cadre opérationnel:
+		<p>     Ces différents projets s'inscrivent dans un cadre opérationnel:
 			j'interagis avec des partenaires scientifiques experts, lors de réunions de projets, à la fois pour respecter les délais de réalisation des livrables, exposer la démarche retenue selon les spécifications demandées et présenter les résultats obtenus.
 			J'ai par ailleurs assisté au meeting final d'un projet au sein de l'Agence Spatiale Européenne à Noordwijk, au Pays-Bas, ainsi qu'à un workshop au Centre de Météorologie Spatiale, situé à Lannion en Bretagne.
 		</p>
@@ -1005,9 +1015,8 @@
 		<h3 class="pageSubtitle contact">Compétences Techniques</h3>
 			
 		<p> Mes compétences se situent dans un environnement de développement d'applications scientifiques. Habitué à la programmation orientée objet, je réalise des codes de traitement principalement en
-			  langage Python. Certaines études ont nécessité la réalisation de simulations numériques de grands jeux de données sur des serveurs de calculs.
+		    langage Python. Certaines études ont nécessité la réalisation de simulations numériques de grands jeux de données sur des serveurs de calculs.
 		</p>
-
 		<p>
 			<span class="span">▸ Développement</span><br/>
 			Langages: <span class="grey">Python 3.8.x, Java 11, C/C++</span>.<br/>
@@ -1035,13 +1044,13 @@
 
                 <h3 class="pageSubtitle contact">Formations</h3>
 			
-			<span class="span">▸ Attestation de formation</span><br/>
-			<span class="grey">Développeur Java - Web</span><br/>
-                        <a class="green2" target="_blank" href="style/css/img/ecn.png">certificat formation</a>
-			</br></br>
-        		<span class="span">▸ Certificate of Achievement</span><br/>
-			<span class="grey">EARTH OBSERVATION FROM SPACE: THE OPTICAL VIEW</span><br/>
-                        <a class="green2" target="_blank" href="style/css/img/certif.pdf">certificat cours [pdf]</a>
+		<span class="span">▸ Attestation de formation</span><br/>
+		<span class="grey">Développeur Java - Web</span><br/>
+                <a class="green2" target="_blank" href="style/css/img/ecn.png">certificat formation</a>
+		</br></br>
+        	<span class="span">▸ Certificate of Achievement</span><br/>
+		<span class="grey">EARTH OBSERVATION FROM SPACE: THE OPTICAL VIEW</span><br/>
+                <a class="green2" target="_blank" href="style/css/img/certif.pdf">certificat cours [pdf]</a>
 
         	<div class="vspace"></div>
 		<div class="vspace"></div>
@@ -1050,10 +1059,10 @@
 		<div class="vspace"></div>
 			
         	<h3 class="pageSubtitle contact">Compléments</h3>
-        		<div class="vspace"></div>
-			<span class="span">▸ Arduino</span><br/>
-			<span class="grey">Capteur Température/Humidité</span><br/>
-			<a class="green2" target="_blank" href="style/css/img/arduino.jpg">Capteur</a>
+        	<div class="vspace"></div>
+		<span class="span">▸ Arduino</span><br/>
+		<span class="grey">Capteur Température/Humidité</span><br/>
+		<a class="green2" target="_blank" href="style/css/img/arduino.jpg">Capteur</a>
 
 	        <div class="top">
 		        <div class="vspace2"></div>
@@ -1065,7 +1074,9 @@
 	<div class="vspace2"></div>
 	<div class="vspace2"></div>
 
-        <!--ICONS-->
+        <!--====================-->
+        <!-- MENU
+	<!--====================-->
 	<div class="homeTableIcon">
 		<center>
 		        <a href="" class="navlinks">Home</a> &nbsp; &nbsp;
@@ -1079,7 +1090,9 @@
 		<div class="vspace2"></div>
 	</div>
 		
-        <!--FOOTER-->
+        <!--====================-->
+        <!-- FOOTER
+	<!--====================-->
 	<div class="footer">Copyright &copy; 2021 - Emmanuel Renault. &nbsp;&nbsp; Hosted by <a href="http://www.github.com/ernlt" target="blank">GitHub</a> - <a href="#popup">Credits</a>
 		<div id="closed"></div>
 		<div class="popup-wrapper" id="popup">
