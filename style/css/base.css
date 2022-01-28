@@ -522,6 +522,10 @@ a.popup-close {
 .my-legend a {
     color: #777;
 }
+.references {
+  margin-top: -8px;
+  border: 1px solid gainsboro;
+}
 .top {
   height: 20px;
   line-height: 20px;
