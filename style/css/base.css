@@ -162,6 +162,8 @@ aside {
   background-color: #f6f6f6;
 }
 .part {
+  margin-top: 4%;
+  margin-bottom: 2%;
   height: 15px;
   background-color: #f6f6f6;
 }
@@ -178,7 +180,8 @@ aside {
   border-bottom: 1px solid #333;
 }
 .hline2 {
-border-bottom: 18px solid gainsboro;
+  margin: 10% auto;
+  border-bottom: 20px solid gainsboro;
 }
 .vspace {
   margin: 2% auto;
