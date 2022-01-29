@@ -598,7 +598,11 @@
 				Les dimensions du domaine sont de 500 x 500 x 5km<sup>3</sup>. 
 				La résolution horizontale (taille d'un pixel) est indiquée en rouge pour chaque zone: 
 				2 x 2 km<sup>2</sup> au coeur du domaine, 2 x 10 et 10 x 10 km<sup>2</sup> dans les zones adjacentes.
-				La résolution verticale du domaine est décrite par 20 niveaux, répartis entre 25 et 500m de hauteur.
+				La résolution verticale du domaine est décrite par 20 niveaux, répartis entre 25 et 500m de hauteur.<br><br>
+				Les données des flux de surface anthropiques à l'échelle de la ville de Paris proviennent d'un accord établi avec l'organisme public AIRPARIF, 
+				qui a fourni un inventaire des émissions anthropiques de CO<sub>2</sub>
+				Les données des flux de surface biosphériques et les données de vent sont fournis par l'ECMWF (European Center for Medium-Range Weather Forecasts) pour une résolution spatio-temporelle de 15 x 15 km² toutes les 3h. Ces émissions sont également prise en compte dans les simulations.
+				D'autre part, le modèle CHIMERE est forcé par les flux horizontaux biosphériques aux frontière du domaine (conditions aux limites ouvertes), issus des simulations du modèle globale LMDz.
 			</p>
 			<aside><img src="style/css/img/grid.png" id="img-grid" class="demo-img"></aside>
 		</div>
@@ -646,8 +650,6 @@
 		<div class="description">
 			<p>
 				En tenant compte de la variabilité spatiale et temporelle des émissions anthropiques, on obtient des valeurs de flux multipliées par un facteur 2 environ, sur une année, en comparaison avec une source ponctuelle constante d'émission.
-				De plus, les flux de surface biosphériques, fournis par l'ECMWF (European Center for Medium-Range Weather Forecasts) pour une résolution spatio-temporelle de 15 x 15 km² toutes les 3h, sont également pris en compte dans les simulations.
-				En effet, on considère les conditions aux limites ouvertes dans le modèle CHIMERE, lui-même forcé par le modèle LMDz de plus grande emprise.
 				On peut observer alors d'importantes variations de concentration de fond (background) avec l'apparition de structures de forte intensité.
 				C'est ce type de structures de plus grande échelle, qui est représenté en B sur les figures ci-dessous. On sait que le signal correspondant au panache de concentration sur Paris, en A, dépend dans une large mesure des vitesses de vent en surface.
 				Dans des conditions d'observation dégradées (vent, couverture nuageuse), le bruit de mesure a une contribution plus importante que le signal d'origine.
@@ -682,7 +684,7 @@
 			<p>
 				L'étude de sensibilité effectuée au cours de ces simulations a montré que les principales sources d'incertitude sur l'estimation des  flux de surface, peuvent être liées à la modification de certains paramètres.
 				Par exemple, la variation du rayon d'intégration de la concentration dans le modèle d'inversion, l'incertitude liée au choix du niveau vertical du vent, l'impact de bruits sur les observations. Ces incertitudes sont d'autant plus grandes si l'on considère des émissions hétérogènes.
-				En ce qui concerne les données des flux de surface à l'échelle de la ville de Paris, un accord a été établi avec l'organisme public AIRPARIF, qui a fourni un inventaire des émissions anthropiques de CO<sub>2</sub>. On dispose ainsi d'une liste d'émissions réalistes , définie selon un code par secteur.
+				On dispose aussi d'une liste d'émissions réalistes, définie selon un code par secteur.
 				En considérant le total des émissions, il est alors possible de distinguer parmi toutes les contributions, le signal le plus représentatif des valeurs d'émissions, en terme d'intensité. La résolution spatio-temporelle est de 1 x 1 km² avec une fréquence horaire. Il est possible de distinguer trois types d'émissions, représentées par les trois figures ci-dessous.
 				Elles peuvent correspondre respectivement au trafic routier, au chauffage résidentiel et commercial et aux diverses industries. 
 			</p>
