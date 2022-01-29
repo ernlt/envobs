@@ -883,7 +883,7 @@ a.popup-close {
 }
 #img-noise {
   margin-top: 20px;
-  margin-left: 0px;
+  margin-right: 20px;
   width: 350px;
   height: 330px;
   display: flex;
