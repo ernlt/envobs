@@ -476,6 +476,7 @@ aside {
   line-height: 3px;
 }
 a.popup-close {
+  margin-top: 5px;
   position: relative;
   background-color: #fff;
   padding: 5px 5px;
