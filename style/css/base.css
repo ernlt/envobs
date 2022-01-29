@@ -542,7 +542,7 @@ a.popup-close {
 .navbar {
   height: 1rem;
   overflow: hidden;
-  background-color: #333;
+  background-color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
