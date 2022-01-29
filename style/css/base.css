@@ -219,7 +219,7 @@ aside {
   color: #fff;
   height: 1rem;
   line-height: 17px;
-  background: #333;
+  background: #00294b;
 }
 .preload * {
   -moz-transition: none !important;
@@ -542,7 +542,7 @@ a.popup-close {
 .navbar {
   height: 1rem;
   overflow: hidden;
-  background-color: #333;
+  background-color: #00294b;
   position: fixed;
   top: 0;
   width: 100%;
