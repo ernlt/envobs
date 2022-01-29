@@ -876,14 +876,14 @@ a.popup-close {
 
 #img-signal {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   width: 350px;
   height: 330px;
   display: flex;  
 }
 #img-noise {
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 30px;
   width: 350px;
   height: 330px;
   display: flex;
