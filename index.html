@@ -572,6 +572,25 @@
 		<div class="part"></div>
 
 		<h3 class="pageSubtitle meteo">Modèles</h3>
+		<h4>Modèle de transport atmosphérique</h4>
+		<div class="description">
+			<p>
+				Les simulations de transport atmosphérique sont réalisées à l'aide du modèle CHIMERE. 
+				Le domaine d'étude utilisé pour effectuer ces simulations est représenté sur la figure ci-contre. 
+				Les dimensions du domaine sont de 500 x 500 x 5km<sup>3</sup>. 
+				La résolution horizontale (taille d'un pixel) est indiquée en rouge pour chaque zone: 
+				2 x 2 km<sup>2</sup> au coeur du domaine, 2 x 10 et 10 x 10 km<sup>2</sup> dans les zones adjacentes.
+				La résolution verticale du domaine est décrite par 20 niveaux, répartis entre 25 et 500m de hauteur.<br><br>
+				Les données des flux de surface anthropiques à l'échelle de la ville de Paris proviennent d'un accord établi avec l'organisme public AIRPARIF, 
+				qui a fourni un inventaire des émissions anthropiques de CO<sub>2</sub>
+				Les données des flux de surface biosphériques et les données de vent sont fournis par l'ECMWF (European Center for Medium-Range Weather Forecasts) pour une résolution spatio-temporelle de 15 x 15 km² toutes les 3h. Ces émissions sont également prise en compte dans les simulations.
+				D'autre part, le modèle CHIMERE est forcé par les flux horizontaux biosphériques aux frontière du domaine (conditions aux limites ouvertes), issus des simulations du modèle globale LMDz.
+			</p>
+			<aside><img src="style/css/img/grid.png" id="img-grid" class="demo-img"></aside>
+		</div>
+
+		<div class="vspace"></div>
+
 		<h4>Modèle analytique</h4>
 		<div class="description">
 			<p>
@@ -588,23 +607,6 @@
 				Les paramètres du modèle analytique sont les suivants: le champ de concentration de CO<sub>2</sub> en background, le flux effectif lié à la diffusion verticale, la direction du vent, et deux paramètres permettant de calculer la largeur du panache à l'endroit observé.
 				Le schéma de modélisation inverse proposé consiste à déterminer ces cinq paramètres, par minimisation d'une fonctionnelle quadratique (inversion analytique).
       			</p>
-		</div>
-		<div class="vspace"></div>
-		<h4>Modèle de transport atmosphérique</h4>
-		<div class="description">
-			<p>
-				Les simulations de transport atmosphérique sont réalisées à l'aide du modèle CHIMERE. 
-				Le domaine d'étude utilisé pour effectuer ces simulations est représenté sur la figure ci-contre. 
-				Les dimensions du domaine sont de 500 x 500 x 5km<sup>3</sup>. 
-				La résolution horizontale (taille d'un pixel) est indiquée en rouge pour chaque zone: 
-				2 x 2 km<sup>2</sup> au coeur du domaine, 2 x 10 et 10 x 10 km<sup>2</sup> dans les zones adjacentes.
-				La résolution verticale du domaine est décrite par 20 niveaux, répartis entre 25 et 500m de hauteur.<br><br>
-				Les données des flux de surface anthropiques à l'échelle de la ville de Paris proviennent d'un accord établi avec l'organisme public AIRPARIF, 
-				qui a fourni un inventaire des émissions anthropiques de CO<sub>2</sub>
-				Les données des flux de surface biosphériques et les données de vent sont fournis par l'ECMWF (European Center for Medium-Range Weather Forecasts) pour une résolution spatio-temporelle de 15 x 15 km² toutes les 3h. Ces émissions sont également prise en compte dans les simulations.
-				D'autre part, le modèle CHIMERE est forcé par les flux horizontaux biosphériques aux frontière du domaine (conditions aux limites ouvertes), issus des simulations du modèle globale LMDz.
-			</p>
-			<aside><img src="style/css/img/grid.png" id="img-grid" class="demo-img"></aside>
 		</div>
 		
 		<div class="part"></div>
