@@ -615,10 +615,24 @@
 				Le schéma de modélisation inverse proposé consiste à déterminer ces cinq paramètres, par minimisation d'une fonctionnelle quadratique (inversion analytique).
       			</p>
 		</div>
+
+		<div class="description">
+			<p>
+				Le modèle CHIMERE est forcé par les flux horizontaux biosphériques aux frontière du domaine (conditions aux limites ouvertes), issus des simulations du modèle globale LMDz.
+				On peut observer alors d'importantes variations de concentration de fond (background) avec l'apparition de structures de forte intensité.
+				C'est ce type de structures de plus grande échelle, qui est représenté en B sur les figures ci-dessous. On sait que le signal correspondant au panache de concentration sur Paris, en A, dépend dans une large mesure des vitesses de vent en surface.
+				Dans des conditions d'observation dégradées (vent, couverture nuageuse), le bruit de mesure a une contribution plus importante que le signal d'origine.
+				Il sera alors difficile de retrouver les flux de surface locaux si l'on prend en compte ces structures lors de l'inversion.
+			</p>
+		</div>
+		<div class="description">
+			<img src="style/css/img/noise.png" id="img-noise" class="demo-img">
+		</div>
 		
 		<div class="part"></div>
 
 		<h3 class="pageSubtitle meteo">Méthodes d'inversion - Résultats</h3>
+		<h4>Inversion analytique</h4>
 		<div class="description">
 			<p>
 				De manière générale, nous avons représenté les données selon la disposition décrite sur la figure ci-contre: En A, les flux de surface des émissions anthropiques.
@@ -647,23 +661,10 @@
 			<img src="style/css/img/simu2.gif" id="img-sim1" class="demo-img">
 			<aside><img src="style/css/img/simu3.GIF" id="img-sim1" class="demo-img"></aside>
 		</div>
-		<div class="vspace2"></div>
-		<div class="description">
-			<p>
-				Le modèle CHIMERE est forcé par les flux horizontaux biosphériques aux frontière du domaine (conditions aux limites ouvertes), issus des simulations du modèle globale LMDz.
-				On peut observer alors d'importantes variations de concentration de fond (background) avec l'apparition de structures de forte intensité.
-				C'est ce type de structures de plus grande échelle, qui est représenté en B sur les figures ci-dessous. On sait que le signal correspondant au panache de concentration sur Paris, en A, dépend dans une large mesure des vitesses de vent en surface.
-				Dans des conditions d'observation dégradées (vent, couverture nuageuse), le bruit de mesure a une contribution plus importante que le signal d'origine.
-				Il sera alors difficile de retrouver les flux de surface locaux si l'on prend en compte ces structures lors de l'inversion.
-			</p>
-		</div>
-		<div class="description">
-			<img src="style/css/img/noise.png" id="img-noise" class="demo-img">
-		</div>
-
+		
 		<div class="part"></div>
 	
-		<h3 class="pageSubtitle meteo">Méthode</h3>
+		<h4>Inversion matricielle</h4>
 		<div class="description">
 			<p>
 			L'idée première est de déterminer l'expression analytique d'un flux. D'après la loi de conservation de la masse, on peut obtenir une équation reliant le flux à certains paramètres du modèle analytique d'inversion.
