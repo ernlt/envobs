@@ -631,8 +631,17 @@
 		
 		<div class="part"></div>
 
-		<h3 class="pageSubtitle meteo">Méthodes d'inversion</h3>
-		<h4>Inversion analytique</h4>
+		<h3 class="pageSubtitle meteo">Méthodes d'inversion atmosphérique</h3>
+                <h4>Inversion analytique - Formalisme mathématique</h4>
+			<p>
+				Le modèle analytique décrit le transport atmophérique des concentrations de XCO<sub>2</sub> par une fonction gaussienne et plusieurs paramètres liés au processus d'advection.
+				Ces mêmes paramètres sont alors introduits dans l'expression analytique d'une fonction de coût reliant les concentration simulées par le modèle CHIMERE et celles simulées par le modèle analytique.  
+				Après une première approximation des paramètres du modèle comme conditions initiales, l'application du schéma de modélisation inverse permet de déterminer ces paramètres, 
+				par minimisation de la fonction de coût avec sa fonction dérivée (i.e. relativement aux paramètres en question). Les valeurs des paramètres ainsi déterminés sont alors à nouveau introduit
+				dans l'expression du modèle analytique direct.
+			</p>
+
+		<h4>Inversion analytique - description</h4>
 		<div class="description">
 			<p>
 				Les résultats de l'inversion analytique sont représentés sur la figure ci-contre: En A, les flux de surface des émissions anthropiques.
