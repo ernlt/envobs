@@ -637,10 +637,11 @@
 		<h3 class="section meteo">Méthodes d'inversion atmosphérique</h3>
                 <h4>Inversion analytique - Formalisme mathématique</h4>
 			<p>
-				Les paramètres du modèle gaussien sont utilisés dans l'expression analytique d'une fonction de coût, reliant les concentrations simulées par le modèle CHIMERE à celles simulées par le modèle analytique.  
-				Après une première approximation des paramètres du modèle comme condition initiale, l'application du schéma de modélisation inverse permet de déterminer ces paramètres, 
-				par minimisation de la fonction de coût avec sa fonction dérivée (relativement aux paramètres en question). Les valeurs des paramètres ainsi déterminés sont alors à nouveau introduites
-				dans l'expression du modèle gaussien.
+				Le principe de l'inversion analytique réside dans la minimisation d'une fonction de coût définie à partir des paramètres du modèle gaussien. Cette fonction s'exprime
+				par la différence quadratique (résidus) entre les concentrations observées et celles simulées par le modèle analytique. 
+				Le calcul du gradient de la fonction à l'aide des dérivées partielles (relativement aux paramètres en question) permet d'appliquer l'algorithme de minimisation.
+				Après une première approximation des paramètres du modèle comme condition initiale, l'algorithme détermine les valeurs de ces paramètres pour lesquels les résidus sont minimums. 
+				Les valeurs des paramètres ainsi déterminés sont alors introduites dans l'expression analytique du modèle direct (gaussien).
 			</p>
 
 		<h4>Inversion analytique - Description</h4>
