@@ -727,15 +727,15 @@
 				
 				L'inversion matricielle s'appuie sur la théorie Bayésienne: on cherche un état d'analyse qui soit un estimateur optimal de l'état réel du système.
 				Dans notre cas, l'analyse porte sur le vecteur de contrôle s. Le problème inverse revient alors à résoudre le problème d'optimisation suivant: s<sup>a</sup> = argmin J, 
-				où J est une fonctionnelle quadratique définie par:<br>
-				J(s) = (s-s<sup>b</sup>)<sup>T</sup>B<sup>-1</sup>(s-s<sup>b</sup>) + (y-M(s))<sup>T</sup>R<sup>-1</sup>(y-M(s)) = J<sub>b</sub>(s) + J<sub>o</sub>(s).
+				où J est une fonctionnelle quadratique définie par:
+				J(s) = (s-s<sup>b</sup>)<sup>T</sup>B<sup>-1</sup>(s-s<sup>b</sup>) + (y-M(s))<sup>T</sup>R<sup>-1</sup>(y-M(s)) = J<sub>b</sub>(s) + J<sub>o</sub>(s).<br>
 				La solution au problème est unique et définie par l'équation d'Euler: le gradient de J est nul à l'optimum. On obtient alors les relations suivantes:<br><br>
 			</p>
-				<div class="box">
-					A = (B<sup>-1</sup> + M<sup>T</sup>R<sup>-1</sup>M)<sup>-1</sup><br>
-					s<sup>a</sup> = s<sup>b</sup> + K(y<sup>0</sup> - Ms<sup>b</sup> - y<sup>fixed</sup>)<br><br>
-					avec K = AM<sup>T</sup>R<sup>-1</sup>
-				</div>
+			<div class="box">
+				A = (B<sup>-1</sup> + M<sup>T</sup>R<sup>-1</sup>M)<sup>-1</sup><br>
+				s<sup>a</sup> = s<sup>b</sup> + K(y<sup>0</sup> - Ms<sup>b</sup> - y<sup>fixed</sup>)<br><br>
+				avec K = AM<sup>T</sup>R<sup>-1</sup>
+			</div>
 		
 		</div>
 		<div class="description">
