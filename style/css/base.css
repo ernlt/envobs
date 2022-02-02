@@ -432,6 +432,17 @@ aside {
   color: #00B19D;
 }
 
+.box {
+  width: 80px;
+  height: 30px;
+  font-weight: 400;
+  font-family: math;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 0 auto;
+  display: block;
+}
+
 #img-hrule {
   transform: rotate(90deg);
 }
