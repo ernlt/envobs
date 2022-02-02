@@ -433,14 +433,14 @@ aside {
 }
 
 .box {
-  width: 80px;
-  height: 30px;
-  font-weight: 400;
+  width: 200px;
+  height: 50px;
+  font-weight: 600;
   font-family: math;
   text-align: center;
   padding: 5px 5px;
   margin: 0 auto;
-  display: block;
+  display: flex;
 }
 
 #img-hrule {
