@@ -432,6 +432,11 @@ aside {
   color: #00B19D;
 }
 
+.course {
+   border: 1px solid gainsboro;
+   padding: 1px 1px;
+}
+
 .math-box {
   width: 350px;
   height: 60px;
