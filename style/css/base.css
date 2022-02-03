@@ -967,6 +967,14 @@ a.popup-close {
   display: flex;
 }
 
+#resp1 {
+  margin-left: 5px; 
+}
+
+#resp2 {
+  margin-left: 5px; 
+}
+
 #img-sim2 {
   margin-top: 20px;
   margin-left: 30px;
