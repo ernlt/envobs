@@ -718,7 +718,7 @@
 				L'inversion par approche matricielle permet de retrouver d'avantages d'informations statistiques sur les paramètres liés à la distribution spatio-temporelle des émissions.
 				Dans notre étude, les mesures de XCO<sub>2</sub> observées par le satellite sont simulées par un modèle dont un estimateur statistique est donné par l'application:
 				<span class="math-inl">s ⟼ y = Ms + y<sup>fixed</sup></span>.<br><br>
-				• <span class="math-inl">s</span> est appelé vecteur de contrôle et représente les paramètres d'entrée du modèle. Ces paramètres sont utilisés, soit pour la remise à l'échelle (à une résolution horaire et spatiale de 2km) des flux anthropiques et biosphériques associés, 
+				• <span class="math-inl">s</span> est appelé vecteur de contrôle et représente les variables d'entrée du modèle. Ces variables sont utilisées, soit pour effectuer la remise à l'échelle (à une résolution horaire et spatiale de 2km) des flux anthropiques et biosphériques associés, 
 				soit pour retrouver la distribution des flux par secteur d'émission, en supposant le profil temporel des émissions connu.<br>
 				• <span class="math-inl">M</span> est appelé opérateur d'observation linéaire. Il est calculé en réalité par la combinaison de trois opérateurs linéaires: remise à l'échelle, transport et intégration.<br>
 				• <span class="math-inl">y<sup>0</sup></span> sont les mesures satellitaires.<br>
@@ -728,15 +728,20 @@
 				L'inversion matricielle s'appuie sur la théorie Bayésienne: on cherche un état d'analyse qui soit un estimateur optimal de l'état réel du système.
 				Dans notre cas, l'analyse porte sur le vecteur de contrôle <span class="math-inl">s</span>. Le problème inverse revient alors à résoudre le problème d'optimisation suivant: s<sup>a</sup> = argmin J, 
 				où <span class="math-inl">J</span> est une fonctionnelle quadratique définie par:<br>
-				<span class="math-inl">J(s) = (s-s<sup>b</sup>)<sup>T</sup>B<sup>-1</sup>(s-s<sup>b</sup>) + (y-M(s))<sup>T</sup>R<sup>-1</sup>(y-M(s)) = J<sub>b</sub>(s) + J<sub>o</sub>(s)</span>. 
+				<span class="math-inl">J(s) = (s-s<sup>b</sup>)<sup>T</sup>B<sup>-1</sup>(s-s<sup>b</sup>) + (y-M(s))<sup>T</sup>R<sup>-1</sup>(y-M(s)) = J<sub>b</sub>(s) + J<sub>o</sub>(s)</span>, où l'on a les notations et hypothèse suivantes:
+				<br><br>
+				• s<sup>b</sup> est l'estimateur a priori du système (ébauche). La distribution statistique de cet estimateur suit une loi Normale N(s<sup>b</sup>, B) 
+				  où B est la matrice de covariance d'erreur a priori. C'est une matrice diagonale dont les valeurs sont définies par la variance σ<sub>B</sub> = 0.5<sup>2</sup>; i.e. que l'incertitude a priori sur les variables du vecteur de contrôle est de 50%.
+				• La distribution statistique liée à la différence entre les mesures XCO<sup>2</sup> par CarbonSat, notées y<sup>0</sup>, et les erreurs d'observation (propres à l'opérateur M et aux erreurs de mesures), suivent une distribution Normale N(0, R), 
+				  où R est la matrice de covariance d'erreur d'observation. Il s'agit d'une matrice diagonale dont les valeurs sont définies par la variance σ<sub>R</sub> = 1<sup>2</sup>; i.e. que l'incertitude liée aux erreurs de mesures des concentrations est de 1ppm.
+				
 				La solution au problème est unique et définie par l'équation d'Euler: le gradient de <span class="math-inl">J</span> est nul à l'optimum. On obtient alors les relations suivantes:<br><br>
 			</p>
 		</div>
 		<div class="math-box">
 			<p>
 				A = (B<sup>-1</sup> + M<sup>T</sup>R<sup>-1</sup>M)<sup>-1</sup><br>
-				s<sup>a</sup> = s<sup>b</sup> + K(y<sup>0</sup> - Ms<sup>b</sup> - y<sup>fixed</sup>)<br><br>
-				avec K = AM<sup>T</sup>R<sup>-1</sup>
+				s<sup>a</sup> = s<sup>b</sup> + K(y<sup>0</sup> - Ms<sup>b</sup> - y<sup>fixed</sup>) &nbsp; &nbsp; avec K = AM<sup>T</sup>R<sup>-1</sup>
 			</p>
 		</div>
 		
