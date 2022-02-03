@@ -433,7 +433,7 @@ aside {
 }
 
 .course {
-   border: 1px solid gainsboro;
+   border: 1px solid #00B19D;
    padding: 2px 10px;
 }
 
@@ -445,10 +445,12 @@ aside {
   padding: 1px 1px;
   margin: 0 auto;
   display: flex;
+  color: #00B19D;
 }
 
 .math-inl {
    font-weight: 500; 
+   color: #00B19D;
 }
 
 #img-hrule {
