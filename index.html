@@ -762,12 +762,11 @@
 				La solution au problème est unique et définie par l'équation d'Euler: le gradient de <span class="math-inl">J</span> est nul à l'optimum. On obtient alors les relations suivantes:<br>
 			</p>
 		</div>
-		<div class="math-box">
-			<p>
-				A = (B<sup>-1</sup> + M<sup>T</sup>R<sup>-1</sup>M)<sup>-1</sup><br>
-				s<sup>a</sup> = s<sup>b</sup> + K(y<sup>0</sup> - Ms<sup>b</sup> - y<sup>fixed</sup>) &nbsp; &nbsp; avec K = AM<sup>T</sup>R<sup>-1</sup>
-			</p>
-		</div>
+		
+		$$A = (B^{-1} + M^{T}R^{-1}M)^{-1} \\
+		  s^a = s^b + K(y^0 - Ms^b - y^{fixed}) \hspace*{1cm} avec K = AM^T R^{-1}
+		$$
+			
 		<div class="description">
 			<p>
 				• s<sup>a</sup> est l'estimateur optimal de s, sachant les distribution statistques de s<sup>b</sup> et y<sup>0</sup>.<br>
