@@ -750,7 +750,7 @@
 		<div class="description">
 			<p>
 				où l'on a les notations et hypothèses suivantes:<br>
-				• La distribution statistique de l'estimateur a priori  \(s^b\), suit une loi Normale N( \(s^b\), B) 
+				• La distribution statistique de l'estimateur a priori  \(s^b\), suit une loi Normale N(\(s^b\), B) 
 				  où  \(B\) est la matrice de covariance d'erreur a priori. C'est une matrice diagonale dont les valeurs sont définies par la variance  \(\sigma_B=0.5^2\); i.e. que l'incertitude a priori sur les variables du vecteur de contrôle est de 50%.<br>
 				• La distribution statistique liée à la différence entre les mesures XCO<sub>2</sub> par CarbonSat, notées  \(y^0\), et les erreurs d'observation (propres à l'opérateur  \(M\) et aux erreurs de mesures) est non biaisée, et suit une loi Normale N(0, R), 
 				  où  \(R\) est la matrice de covariance d'erreur d'observation. Il s'agit d'une matrice diagonale dont les valeurs sont définies par la variance  \(\sigma_R=1^2\) i.e. que l'incertitude liée aux erreurs de mesures des concentrations est de 1ppm.<br><br>
@@ -764,7 +764,7 @@
 			<p>
 				•  \(s^a\) est l'estimateur optimal de  \(s\), sachant les distribution statistques de  \(s^b\) et  \(y^0\).<br>
 				•  \(A\) est la matrice de covariance d'erreurs a posteriori. Elle caractérise les incertitudes a posteriori sur les variables de contrôle de \(s^a\).
-				Cette nouvelle information statistique a posteriori sur les émissions, permet d'obtenir des incertitudes plus faibles que les statistiques a priori.
+				Cette nouvelle information statistique a posteriori sur les émissions permet d'obtenir des incertitudes plus faibles par rapport aux statistiques a priori.
 				On évalue cette amélioration en la quantifiant en termes de réduction d'incertitude, exprimée à partir des déviations standard par:  \(1-\frac{\sigma_A}{\sigma_B}\).
 			</p>		
 		</div>
@@ -775,8 +775,9 @@
 		<div class="description">
 			<p>
 				Dans notre cas, une fonction de réponse est la donnée d'une carte de concentration de XCO<sub>2</sub> de la composante d'un flux associé à la variable de contrôle (estimateur optimal).
-				Elle est calculée à partir de l'opérateur: <span class="math-inl">$$s_j \longmapsto m_j = Ms_j$$</span>, où
-				<span class="math-inl">$$m_j$$</span> est la j<sup>ième</sup> colonne de la matrice <span class="math-inl">$$M$$</span> et <span class="math-inl">$$s_j$$</span> est le vecteur de contrôle dont la la j<sup>ième</sup> variable est égale à 1, et les autres à 0.
+				Elle est calculée à partir de l'opérateur: 
+				$$s_j \longmapsto m_j = Ms_j$$, où
+				\(m_j\) est la j<sup>ième</sup> colonne de la matrice \(M\) et  \(s_j\) est le vecteur de contrôle dont la la j<sup>ième</sup> variable est égale à 1, et les autres à 0.
 				Les fonctions de réponse permettent de quantifier l'impact des émissions sur la concentration de CO<sub>2</sub> au temps de passage du satellite.  
 				Les figures ci-dessous illustrent (partie haute) les fonctions de réponse horaires des émissions anthropiques et (partie basse) celles des émissions par secteur.
 				Le résultat des calculs d'incertitudes a posteriori sur les flux horaires, a montré une réduction optimale pour des vents d'environ 7m.s<sup>-1</sup>, et aussi après aggrégation spatiale de ces flux sur la fenêtre d'observation (flux totaux).
