@@ -733,39 +733,39 @@
 		$$s \longmapsto y = Ms + y^{fixed}$$
 		<div class="description">
 			<p>
-				• $$s$$ est appelé vecteur de contrôle et représente les variables d'entrée du modèle. Ces variables sont utilisées, soit pour effectuer la remise à l'échelle (à une résolution horaire et spatiale de 2km) des flux anthropiques et biosphériques associés, 
+				• \(s\) est appelé vecteur de contrôle et représente les variables d'entrée du modèle. Ces variables sont utilisées, soit pour effectuer la remise à l'échelle (à une résolution horaire et spatiale de 2km) des flux anthropiques et biosphériques associés, 
 				soit pour retrouver la distribution des flux par secteur d'émission, en supposant le profil temporel des émissions connu.<br>
-				• $$M$$ est appelé opérateur d'observation linéaire. Il est calculé en réalité par la combinaison de trois opérateurs linéaires: remise à l'échelle, transport et intégration.<br>
-				• $$y^0$$ sont les mesures satellitaires.<br>
-				• $$y^{fixed} est un terme constant. Il représente la signature d'un signal de fond (background) due à une influence de plus large échelle des flux de CO<sub>2</sub> en dehors du domaine d'étude (conditions initiales aux frontières). 
+				•  \(M\) est appelé opérateur d'observation linéaire. Il est calculé en réalité par la combinaison de trois opérateurs linéaires: remise à l'échelle, transport et intégration.<br>
+				•  \(y^0\) sont les mesures satellitaires.<br>
+				•  \(y^{fixed}\) est un terme constant. Il représente la signature d'un signal de fond (background) due à une influence de plus large échelle des flux de CO<sub>2</sub> en dehors du domaine d'étude (conditions initiales aux frontières). 
 				  Ce terme est pris en compte lors de l'inversion, car il est intégré au vecteur de contrôle.<br><br><br><br>
 				
 				L'inversion matricielle s'appuie sur l'inférence Bayésienne: on cherche un état d'analyse qui soit un estimateur optimal de l'état réel du système.
-				Dans notre cas, l'analyse porte sur la mise à jour statistique de l'estimateur a priori (ébauche), noté s<sup>b</sup>, du vecteur de contrôle <span class="math-inl">s</span>. 
-				Le problème inverse revient alors à résoudre le problème d'optimisation suivant: $$s^a = argmin J$$, 
-				où $$J$$ est une fonctionnelle quadratique définie par la fonction coût:
+				Dans notre cas, l'analyse porte sur la mise à jour statistique de l'estimateur a priori (ébauche), noté  \(s^b\), du vecteur de contrôle  \(s\). 
+				Le problème inverse revient alors à résoudre le problème d'optimisation suivant:  \(s^a=argmin(J)\), 
+				où  \(J\) est une fonctionnelle quadratique définie par la fonction coût:
 			</p>
 		</div>
 		$$J(s) = (s-s^b)^T B^{-1}(s-s^b) + (y-M(s))^T R^{-1}(y-M(s))$$
 		<div class="description">
 			<p>
 				où l'on a les notations et hypothèses suivantes:<br>
-				• La distribution statistique de l'estimateur a priori s<sup>b</sup>, suit une loi Normale N(<span class="math-inl">$$s^b$$</span>, B) 
-				  où B est la matrice de covariance d'erreur a priori. C'est une matrice diagonale dont les valeurs sont définies par la variance $$\sigma_B = 0.5^2$$; i.e. que l'incertitude a priori sur les variables du vecteur de contrôle est de 50%.<br>
-				• La distribution statistique liée à la différence entre les mesures XCO<sub>2</sub> par CarbonSat, notées <span class="math-inl">$$y^0$$</span>, et les erreurs d'observation (propres à l'opérateur <span class="math-inl">$$M$$</span> et aux erreurs de mesures) est non biaisée, et suit une loi Normale N(0, R), 
-				  où R est la matrice de covariance d'erreur d'observation. Il s'agit d'une matrice diagonale dont les valeurs sont définies par la variance $$\sigma_R = 1^2$$; i.e. que l'incertitude liée aux erreurs de mesures des concentrations est de 1ppm.<br><br>
+				• La distribution statistique de l'estimateur a priori  \(s^b\), suit une loi Normale N( \(s^b\), B) 
+				  où  \(B\) est la matrice de covariance d'erreur a priori. C'est une matrice diagonale dont les valeurs sont définies par la variance  \(\sigma_B=0.5^2\); i.e. que l'incertitude a priori sur les variables du vecteur de contrôle est de 50%.<br>
+				• La distribution statistique liée à la différence entre les mesures XCO<sub>2</sub> par CarbonSat, notées  \(y^0\), et les erreurs d'observation (propres à l'opérateur  \(M\) et aux erreurs de mesures) est non biaisée, et suit une loi Normale N(0, R), 
+				  où  \(R\) est la matrice de covariance d'erreur d'observation. Il s'agit d'une matrice diagonale dont les valeurs sont définies par la variance  \(\sigma_R=1^2\) i.e. que l'incertitude liée aux erreurs de mesures des concentrations est de 1ppm.<br><br>
 				
-				La solution au problème est unique et définie par l'équation d'Euler: le gradient de $$J$$ est nul à l'optimum. On obtient alors les relations suivantes:<br>
+				La solution au problème est unique et définie par le fait que le gradient de \(J\) est nul à l'optimum: \(\grad J(s^a)=0\) (équation d'Euler). On obtient alors les relations suivantes:<br>
 			</p>
 		</div>
 		$$A = (B^{-1} + M^{T}R^{-1}M)^{-1} \\$$
 		$$s^a = s^b + K(y^0 - Ms^b - y^{fixed})$$ &nbsp; &nbsp; avec $$K = AM^T R^{-1}$$
 		<div class="description">
 			<p>
-				• <span class="math-inl">$$s^a$$</span> est l'estimateur optimal de <span class="math-inl">$$s$$</span>, sachant les distribution statistques de <span class="math-inl">$$s^b$$</span> et <span class="math-inl">$$y^0$$</span>.<br>
-				• <span class="math-inl">$$A$$</span> est la matrice de covariance d'erreurs a posteriori. Elle caractérise les incertitudes a posteriori sur les variables de contrôle de <span class="math-inl">$$s^a$$$</span>.
+				•  \(s^a\) est l'estimateur optimal de  \(s\), sachant les distribution statistques de  \(s^b\) et  \(y^0\).<br>
+				•  \(A\) est la matrice de covariance d'erreurs a posteriori. Elle caractérise les incertitudes a posteriori sur les variables de contrôle de \(s^a\).
 				Cette nouvelle information statistique a posteriori sur les émissions, permet d'obtenir des incertitudes plus faibles que les statistiques a priori.
-				On évalue cette amélioration en la quantifiant en termes de réduction d'incertitude, exprimée à partir des déviations standard par: <span class="math-inl">$$1 - \frac{\sigma_A}{\sigma_B}$$</span>.
+				On évalue cette amélioration en la quantifiant en termes de réduction d'incertitude, exprimée à partir des déviations standard par:  \(1-\frac{\sigma_A}{\sigma_B}\).
 			</p>		
 		</div>
 		</div>	
