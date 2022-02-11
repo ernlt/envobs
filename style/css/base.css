@@ -916,6 +916,14 @@ a.popup-close {
   display: flex;
 }
 
+#img-hwspd {
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 380px;
+  height: 340px;
+  display: flex;
+}
+
 #img-emis {
   margin-top: 20px;
   margin-left: 0px;
@@ -953,14 +961,6 @@ a.popup-close {
   margin-left: 0px;
   width: 410px;
   height: 300px;
-  display: flex;
-}
-
-#img-hwspd {
-  margin-top: 20px;
-  margin-left: 0px;
-  width: 380px;
-  height: 250px;
   display: flex;
 }
 
