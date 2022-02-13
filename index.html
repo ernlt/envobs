@@ -741,7 +741,6 @@
 				• \(s\) est appelé vecteur de contrôle et représente les variables d'entrée du modèle. Ces variables sont utilisées, soit pour effectuer la remise à l'échelle (à une résolution horaire et spatiale de 2km) des flux anthropiques et biosphériques associés, 
 				soit pour retrouver la distribution des flux par secteur d'émission, en supposant le profil temporel des émissions connu.<br>
 				•  \(M\) est appelé opérateur d'observation linéaire. Il est calculé en réalité par la combinaison de trois opérateurs linéaires: remise à l'échelle, transport et intégration.<br>
-				•  \(y^0\) sont les mesures satellitaires.<br>
 				•  \(y^{fixed}\) est un terme constant. Il représente la signature d'un signal de fond (background) due à une influence de plus large échelle des flux de CO<sub>2</sub> en dehors du domaine d'étude (conditions initiales aux frontières). 
 				  Ce terme est pris en compte lors de l'inversion, car il est intégré au vecteur de contrôle.<br><br><br><br>
 				
@@ -751,10 +750,11 @@
 				où  \(J\) est une fonctionnelle quadratique définie par la fonction coût:
 			</p>
 		</div>
-		$$J(s) = (s-s^b)^T B^{-1}(s-s^b) + (y-Ms)^T R^{-1}(y-Ms)$$
+		$$J(s) = (s-s^b)^T B^{-1}(s-s^b) + (y^{0}-Ms)^T R^{-1}(y^{0}-Ms)$$
 		<div class="description">
 			<p>
 				où l'on a les notations et hypothèses suivantes:<br>
+				•  \(y^0\) sont les mesures satellitaires.<br>
 				• La distribution statistique de l'estimateur a priori  \(s^b\), suit une loi Normale N(\(s^b\), B) 
 				  où  \(B\) est la matrice de covariance d'erreur a priori. C'est une matrice diagonale dont les valeurs sont définies par la variance  \(\sigma_B=0.5^2\); i.e. que l'incertitude a priori sur les variables du vecteur de contrôle est de 50%.<br>
 				• La distribution statistique liée à la différence entre les mesures XCO<sub>2</sub> par CarbonSat, notées  \(y^0\), et les erreurs d'observation (propres à l'opérateur  \(M\) et aux erreurs de mesures) est non biaisée, et suit une loi Normale N(0, R), 
