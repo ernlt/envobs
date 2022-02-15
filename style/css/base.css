@@ -811,11 +811,19 @@ a.popup-close {
 #img-tracks {
   margin-top: 20px;
   margin-left: -2px;
-  width: 800px;
+  width: 400px;
   height: 300px;
   display: flex;
 }
-  
+
+#img-alti {
+  margin-top: 20px;
+  margin-left: -2px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+}
+
 
 #img-mesh1 {
   margin-top: 20px;
