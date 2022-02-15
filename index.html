@@ -608,22 +608,18 @@
 			<p>
 				Le transport atmosphérique du CO<sub>2</sub> sur le domaine d'étude est modélisé par le modèle CHIMERRE de type Eulérien 3D (Menut et al., 2013) 
 				qui fournit les champs de concentration de CO<sub>2</sub>. 
-				Les dimensions du domaine d'étude (fig. gauche ci-dessous) sont de 500x500x5km<sup>3</sup>. 
+				Les dimensions du domaine d'étude (fig. gauche ci-dessous) sont de 500 x 500 x 5km<sup>3</sup>. 
 				La résolution horizontale est définie par la taille d'un pixel et est indiquée en rouge: 
 				2x2 km<sup>2</sup> au coeur du domaine, 2x10 et 10x10 km<sup>2</sup> dans les zones adjacentes.
-				La résolution verticale du domaine est répartie sur 20 niveaux, allant 25 à 500m de hauteur.
-				</p>
-		</div>
-		<div class="description">
-			<img src="style/css/img/grid.png" id="img-grid">
-			<aside><img src="style/css/img/hwspd.png" id="img-hwspd"></aside>
+				La résolution verticale du domaine est répartie sur 20 niveaux, allant 25 à 500m de hauteur.<br><br>
+				onnées des émissions anthropiques à l'échelle de la ville de Paris sont fournies par AIRPARIF (accord spécifique), 
+				avec une résolution spatiale de 1 x 1 km² et temporelle horaire.
+			</p>
+			<aside><img src="style/css/img/grid.png" id="img-grid"></aside>
 		</div>	
 		<br>
 		<div class="description">
-			<p>
-				Les données des flux de surface biosphériques et de vent sont fournies par l'ECMWF (European Center for Medium-Range Weather Forecasts) pour une résolution spatio-temporelle de 15 x 15 km² toutes les 3h. 
-				Les champs de vent au-dessus de la région parisienne sont issus des réanalyses de l'ECMWF sur une période de six mois.
-				Les données des émissions anthropiques à l'échelle de la ville de Paris sont fournies par AIRPARIF (accord spécifique), avec une résolution spatiale de 1 x 1 km² et temporelle horaire. 
+			<p> 
 				Les estimations des flux de surface dépendent de la distribution spatiale des émissions anthropiques de CO<sub>2</sub>, et selon trois types d'émission (cf. figure ci-dessous): linéaire (traffic routier), surfacique (chauffages) et ponctuel (industries).
 				En considérant le total des émissions, il est alors possible de distinguer parmi toutes les contributions, le signal du flux le plus représentatif des valeurs d'émissions, en terme d'intensité. 
 			</p>
@@ -650,9 +646,15 @@
 				Il s'agit d'un modèle de conservation de la masse qui s'avère être optimal dans le cas d'émissions supposées stables et un transport de type gaussien. 
 				Aucune information a priori au sujet des émissions et de la direction du panache n'est prise en compte par le modèle.
 				Les paramètres du modèle analytique sont les suivants: le champ moyen de concentration de CO<sub>2</sub> en background, le flux effectif lié à la diffusion verticale, la direction du vent, et deux paramètres permettant de calculer la largeur du panache à l'endroit observé.
+				Les données de vent sont fournies par l'ECMWF (European Center for Medium-Range Weather Forecasts) pour une résolution spatio-temporelle de 15 x 15 km² toutes les 3h. 
+				Les champs de vent au-dessus de la région parisienne sont issus des réanalyses de l'ECMWF sur une période de six mois.
 			</p>
 		</div>
-
+		<div class="description">
+			<img src="style/css/img/simu4.gif" id="img-sim2">
+			<aside><img src="style/css/img/hwspd.png" id="img-hwspd"></aside>
+		</div>	
+		<br>
 		<h4>Modèle analytique - Observations bruitées</h4>
 		<div class="description">
 			<p>
