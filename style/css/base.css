@@ -810,7 +810,7 @@ a.popup-close {
 
 #img-tracks {
   margin-top: 20px;
-  margin-left: -2px;
+  margin-left: 20px;
   width: 400px;
   height: 300px;
   display: flex;
