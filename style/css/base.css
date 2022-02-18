@@ -818,8 +818,8 @@ a.popup-close {
 
 #img-alti {
   margin-top: 20px;
-  margin-left: -2px;
-  width: 400px;
+  margin-left: 5px;
+  width: 450px;
   height: 300px;
   display: flex;
 }
