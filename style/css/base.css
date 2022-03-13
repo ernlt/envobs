@@ -298,9 +298,9 @@ aside {
 .homeCell {
   display: block;
   position: relative;
-  margin-right: 5px;
+  margin: 6px;
   float: left;
-  width: 205px;
+  width: 199px;
   height: 230px;
   opacity: 1;
   cursor: pointer;
