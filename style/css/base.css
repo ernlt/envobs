@@ -30,6 +30,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("img/background.png");
   -moz-transition: background 1s;
   -o-transition: background 1s;
   -webkit-transition: background 1s;
@@ -42,17 +43,50 @@ body.preload {
   transition: background 0s;
 }
 body.darken {
-  background-color: white;
+  background: #fff;
 }
 body.darken .creationsLink {
   opacity: 0;
 }
+.homeLogo {
+  position: center;
+  margin: 0 auto;
+  padding-left: 0px;
+  margin-top: 40px;
+  width: 850px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+.bandeau {
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 850px;
+  height: 30px;
+  background: transparent;
+  background: rgba(255,255,255,0.3);
+  color: #333;
+}
+.homeLinks {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 850px;
+  height: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+}
 .title, .title2 {
   margin-bottom: 0px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 300;
   text-align: center;
   color: #333;
+  opacity: 0.8;
   z-index: 10;
   cursor: default;
   -moz-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
@@ -61,12 +95,12 @@ body.darken .creationsLink {
   transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
 }
 .title {
-  margin-top: 80px;
-  font-size: 25px;
+  margin-top: 35px;
+  font-size: -6px;
 }
 .title2 {
-  margin-top: 5px;
-  font-size: 18px;
+  margin-top: 3px;
+  font-size: 20px;
 }
 .container {
   margin: 0 auto;
@@ -76,7 +110,7 @@ body.darken .creationsLink {
   /*height: 600px;*/
   position: relative;
   color: #7a7a7a;
-  background-color: white;
+  background: rgba(255,255,255,0.3);
 }
 .back {
   position: absolute;
@@ -229,20 +263,23 @@ aside {
 }
 .homeTable {
   margin: 0 auto;
-  width: 800px;
+  padding-top: 80px;
+  width: 850px;
+  height: 400px;
+  background: rgba(255,255,255,0.3);
   overflow: hidden;
 }
 .homeTableIcon {
   margin: 0 auto;
-  width: 800px;
+  width: 850px;
   overflow: hidden;
   color: #333;
 }
 .homeIcon {
   width: 16px;
   height: 16px;
-  background-color: white;
-  color: #333;
+  background: transparent;
+  color: #fff;
   cursor: pointer;
   -moz-transition: opacity 0.7s, background 0.7s, height 1s;
   -o-transition: opacity 0.7s, background 0.7s, height 1s;
@@ -263,13 +300,11 @@ aside {
 .homeCell {
   display: block;
   position: relative;
-  margin: 1px;
+  margin: 5px;
   float: left;
-  width: 198px;
-  height: 198px;
+  width: 205px;
+  height: 230px;
   opacity: 1;
-  background-color: #335E6F;
-  border: 1px solid white;
   cursor: pointer;
   -moz-transition: opacity 0.7s, background 0.7s, height 1s;
   -o-transition: opacity 0.7s, background 0.7s, height 1s;
@@ -283,7 +318,7 @@ aside {
 }
 .homeCell:hover {
   opacity: 1;
-  background-color:  #335E6F;
+  background: transparent;
   -moz-transition: opacity 0.5s, background 0.5s;
   -o-transition: opacity 0.5s, background 0.5s;
   -webkit-transition: opacity 0.5s, background 0.5s;
@@ -311,23 +346,28 @@ aside {
 }
 .homeCellBackground {
   position: absolute;
-  top: 0;
-  bottom: 32px;
-  left: -98px;
+  top: 26px;
+  bottom: 0px;
+  left: -93px;
   right: 0;
   margin: auto;
-  width: 392px;
-  height: 330px;
+  width: 390px;
+  height: 390px;
+  background: transparent;
   opacity: 1;
   -moz-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -webkit-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
 }
+.homeCellBackground:hover {
+  opacity: 0.8;
+}
 .homeCellTitle {
   position: absolute;
   z-index: 1;
-  bottom: 5px;
+  top: 7px;
+  bottom: 0px;
   left: 0;
   padding-left: 5px;
   text-align: center;
@@ -379,33 +419,20 @@ aside {
   filter: grayscale(0%);
 }
 .homeCell.experience .homeCellTitle {
-  color: white;
+  color: #333;
   font-weight: 400;
 }
 .homeCell.experience .homeCellTitle::before {
-  border-left-color: white; 
+  border-left-color: #333; 
 }
 .homeCell:hover .homeCellTitle {
-  color: white; 
+  color: #333; 
   font-weight: 400;
-}
-.homeCell.contact .homeCellTitle {
-  color: white;
-  font-weight: 400;
-}
-.homeCell.contact .homeCellTitle::before {
-  border-left-color: white;
-}
-.homeCell.contact:hover .homeCellTitle {
-  color: white;
 }
 .homeCell.experience .homeCellSubtitle {
   color: white;
 }
 .homeCell.experience:hover .homeCellSubtitle {
-  color: white;
-}
-.homeCell.contact .homeCellSubtitle {
   color: white;
 }
 .greenLink {
