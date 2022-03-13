@@ -308,7 +308,7 @@ aside {
 .homeCell {
   display: block;
   position: relative;
-  margin: 5px;
+  margin-right: 5px;
   float: left;
   width: 205px;
   height: 230px;
