@@ -57,7 +57,7 @@ body.darken .creationsLink {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  background-color: transparent;
+  background: transparent;
 }
 .bandeau {
   padding-top: 5px;
@@ -80,11 +80,20 @@ body.darken .creationsLink {
   color: #fff;
   text-align: center;
 }
+.content {
+  margin: 0 auto;
+  width: 425;
+  padding-left: 10px;
+  margin-left: 0px;
+  display: block;
+  color: #333;
+  opacity: 1;
+}
 .title, .title2 {
   margin-bottom: 0px;
   font-family: "Public Sans", sans-serif;
-  font-weight: 300;
-  text-align: center;
+  font-weight: 400;
+  text-align: left;
   color: #333;
   opacity: 0.8;
   z-index: 10;
@@ -106,8 +115,7 @@ body.darken .creationsLink {
   margin: 0 auto;
   padding: 0 0px;
   padding-top: 67px;
-  width: 796px;
-  /*height: 600px;*/
+  width: 850px;
   position: relative;
   color: #7a7a7a;
   background: rgba(255,255,255,0.3);
