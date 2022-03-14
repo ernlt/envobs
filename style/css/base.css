@@ -424,6 +424,7 @@ aside {
   border-left-color: #333; 
 }
 .homeCell:hover .homeCellTitle {
+  height: 20px;
   color: #333; 
   font-weight: 400;
 }
