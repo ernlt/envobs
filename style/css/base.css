@@ -369,6 +369,7 @@ aside {
   top: 205px;
   bottom: 0px;
   left: 5px;
+  padding-top: 1px;
   padding-left: 5px;
   text-align: left;
   font-weight: 400;
