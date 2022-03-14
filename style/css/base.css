@@ -1041,9 +1041,7 @@ a.popup-close {
 }
 
 #img-europe {
-  margin-top: 20px;
-  margin-left: 80px;
-  margin-right: 0px;
+  margin: 10px auto;
   width: 640px;
   height: 420px;
   display: flex;
