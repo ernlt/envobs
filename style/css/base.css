@@ -269,6 +269,7 @@ aside {
 }
 .homeTableIcon {
   margin: 0 auto;
+  padding-left: 10px;
   width: 850px;
   overflow: hidden;
   color: #333;
@@ -605,6 +606,10 @@ a.popup-close {
 
 .navlinks {
  color: #333; 
+ font-family: "News Cycle", arial, sans-serif;
+}
+.navlinks:hover {
+  color: #3498db; 
 }
 
 #img1 {
