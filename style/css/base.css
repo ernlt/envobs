@@ -1019,12 +1019,8 @@ a.popup-close {
   display: flex;
 }
 
-#resp1 {
-  margin-left: 10px; 
-}
-
-#resp2 {
-  margin-left: 10px; 
+#resp1, #resp2 {
+  margin: 5 auto;
 }
 
 #img-sim2 {
