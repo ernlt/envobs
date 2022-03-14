@@ -629,7 +629,6 @@
 
 		<h3 class="section meteo">Modèles de transport atmosphérique</h3>
 		<h4>Modèle numérique méso-échelle</h4>
-		<div class="description">
 			<p>
 				Le transport atmosphérique du CO<sub>2</sub> sur le domaine d'étude est simulé par le modèle CHIMERE de type Eulérien 3D (Menut et al., 2013) 
 				qui fournit les champs de concentration de CO<sub>2</sub> en temps et en espace.
@@ -642,7 +641,6 @@
 				les données d'émissions sont fournies par le modèle EDGAR 2008 pour une résolution spatio-temporelle de 10 x 10km<sup2</sup> sur une année.
 			</p>
 			<aside><img src="style/css/img/grid.png" id="img-grid"></aside>
-		</div>	
 		<br>
 		<div class="description">
 			<p> 
@@ -655,7 +653,6 @@
 		</div>
 			
 		<h4>Modèle analytique gaussien</h4>
-		<div class="description">
 			<p>
 				Cette étude a nécessité le développement d'outils de traitement de données afin d'évaluer la capacité de CarbonSat à observer le champ de concentration de XCO<sub>2</sub> à partir d'une source d'émission ponctuelle (ex. cheminée) ou semi-ponctuelle (ex. échelle de la ville de Paris).
 				Un modèle analytique gaussien de transport atmosphérique a été développé (Bréon, 2012) de manière à simuler et analyser le profil spatio-temporel des concentrations. 
@@ -663,7 +660,6 @@
 				La figure de gauche illustre un instantanné CarbonSat du panache de XCO<sub>2</sub> à l'échelle de Paris, 
 				celle de droite représente le transport horaire des émissions anthropiques associées.
 			</p>
-		</div>
 		<div class="description">
 				<img src="style/css/img/plume_model.png" id="img-sp" class="demo-img">
                 </div>
@@ -683,7 +679,6 @@
 		</div>	
 		<br>
 		<h4>Modèle analytique - Observations bruitées</h4>
-		<div class="description">
 			<p>
 				Le modèle régional CHIMERE est forcé par les flux de surface biosphériques aux frontières du domaine (conditions aux limites ouvertes) issus des simulations du modèle global LMDz.
 				Ceci peut induire d'importantes variations de concentration de fond (background) avec l'apparition de structures de forte intensité.
@@ -691,7 +686,6 @@
 				Dans des conditions d'observation dégradées (vent, couverture nuageuse), le bruit de mesure a une contribution plus importante que le signal d'origine.
 				Il sera alors difficile de retrouver les flux de surface locaux si l'on prend en compte ces structures lors de l'inversion.
 			</p>
-		</div>
 		<div class="description">
 			<img src="style/css/img/signal.png" id="img-signal">
 			<aside><img src="style/css/img/noise.png" id="img-noise"></aside>
@@ -710,7 +704,6 @@
 			</p>
 
 		<h4>Inversion paramétrique - Description</h4>
-		<div class="description">
 			<p>
 				Les résultats de l'inversion sont représentés sur la figure ci-contre. En A, les flux de surface des émissions anthropiques.
 				En B, le champ de concentration de XCO<sub>2</sub> issu des sorties du modèle de transport atmosphérique CHIMERE et qui correspondrait aux observations issues des mesures satellitaires: c'est le CO<sub>2</sub> observé (pseudo-observations).
@@ -721,9 +714,7 @@
 				On peut constater dès lors, et dans une large mesure, une bonne corrélation entre les deux signaux générés par les modèles.
 			</p>
 			<aside><img src="style/css/img/inv.png" id="img-inv" class="demo-img"></aside>
-		</div>
 		<h4>Inversion paramétrique - Observations bruitées</h4>
-		<div class="description">
 			<p>
 				Les deux inversions représentées ci-dessous sont effectuées à partir d'hypothèses plus réalistes: la distribution spatiale des flux de surface est hétérogène et les émissions varient au cours du temps.
 				Les simulations sont réalisées sur une période de 5 jours.
@@ -732,14 +723,12 @@
 				L'ajout de bruit gaussien sur les mesures (fig. de droite), par exemple de l'ordre de 1 ppm, montre l'impossibilité d'établir une bonne corrélation,
 				même si l'inversion permet d'extraire un signal similaire à la structure d'un panache.
 			</p>
-		</div>
 		<div class="description">
 			<img src="style/css/img/simu2.gif" id="img-sim1" class="demo-img">
 			<aside><img src="style/css/img/simu3.GIF" id="img-sim1" class="demo-img"></aside>
 		</div>
 		<br>
 		<h4>Inversion paramétrique - Estimation des flux</h4>
-		<div class="description">
 			<p>
 				L'équation de conservation de la masse permet de déterminer l'expression du flux en fonction des paramètres du modèle analytique gaussien.
 				On peut noter que le flux dépend en particulier du vent, à différents niveaux d'altitudes. Dans le cas d'une source ponctuelle constante, on peut déterminer la valeur du flux "estimé" à partir du résultat de l'inversion, et pour un vent localisé au niveau de la source.
@@ -749,7 +738,6 @@
 				En tenant compte de la variabilité spatiale et temporelle des émissions anthropiques, on obtient des valeurs de flux multipliées par un facteur 2 environ, sur une année, en comparaison avec une source ponctuelle constante d'émission. Les courbes rouges associées aux flux réels d'émissions illustrent ce phénomène.
 				Cette variabilité induit une concentration de CO<sub>2</sub> évaluée à 20 Mt par an (figure gauche) et à 40 Mt par an (figure droite).
 			</p>
-		</div>
 		<div class="description">
 			<img src="style/css/img/ts1.png" id="img-ts1" class="demo-img">
 			<aside><img src="style/css/img/ts2.png" id="img-ts2" class="demo-img"></aside>
@@ -826,7 +814,6 @@
 		<div class="divider"></div>
 	
 		<h3 class="section meteo">Article</h3>
-		<div class="description">
 			<p>
 				Broquet, G., Bréon, F.-M., Renault, E., Buchwitz, M., Reuter, M., Bovensmann, H.,
 				Chevallier, F., Wu, L., and Ciais, P. : The potential of satellite spectro-imagery
@@ -835,18 +822,15 @@
 				<a class="greenLink" target="_blank" href="https://www.atmos-meas-tech.net/11/681/2018/amt-11-681-2018.html">Article</a>
 				<a class="greenLink" target="_blank" href="https://www.nies.go.jp/soc/events/iwggms9/pdf/posters/27_GregoireBroquet.pdf">Poster</a>
 			</p>
-		</div>
 			
 		<div class="vspace"></div>
 
 		<h3 class="section meteo">Rapport de mission de sélection</h3>
-		<div class="description">
 			<p>
 				Un rapport complet de l'ESA est disponible en anglais, sous l'intitulé suivant: Report for Mission Selection: CarbonSat (ESA SP-1330/1, June 2015).
 				Le paragraphe 7.4.2 p. 170 du document se réfère à l'étude présentée ici.
 				<br><br><a class="greenLink" target="_blank" href="https://esamultimedia.esa.int/docs/EarthObservation/SP1330-1_CarbonSat.pdf">Rapport</a>
 			</p>
-		</div>
 
 		<div class="top">
 		        <div class="vspace2"></div>
