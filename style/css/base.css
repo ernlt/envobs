@@ -726,7 +726,7 @@ a.popup-close {
 
 #img-vrad {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   width: 350px;
   height: 250px;
   display: flex;
@@ -794,7 +794,7 @@ a.popup-close {
 
 #img-wksp {
   margin: 0 auto;
-  width: 796px;
+  width: 850px;
   height: 600px;
   display: flex;
   border: 1px solid gainsboro;
