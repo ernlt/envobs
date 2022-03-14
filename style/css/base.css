@@ -712,38 +712,6 @@ a.popup-close {
   margin: 10px auto;  
 }
 
-#img-vpres {
-  margin-top: 20px;
-  margin-left: -5px;
-  width: 340px;
-  height: 250px;
-  display: flex;
-}
-
-#img-ipres {
-  margin-top: 20px;
-  margin-right: 30px;
-  width: 340px;
-  height: 250px;
-  display: flex;
-}
-
-#img-vrad {
-  margin-top: 20px;
-  margin-left: 45px;
-  width: 350px;
-  height: 250px;
-  display: flex;
-}
-
-#img-irad {
-  margin-top: 20px;
-  margin-right: 50px;
-  width: 370px;
-  height: 250px;
-  display: flex;
-}
-
 #img-cha {
   margin-top: 20px;
   margin-left: 80px;
@@ -790,7 +758,7 @@ a.popup-close {
 
 #img-classif {
   margin-top: 10px;
-  margin-left: 32px;
+  margin-left: 42px;
   width: 500px;
   height: 370px;
   display: flex;
