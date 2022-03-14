@@ -750,8 +750,7 @@ a.popup-close {
 }
 
 #img-h2d {
-  margin-top: 20px;
-  margin-left: 10px;
+  margin: 5px auto;
   width: 780px;
   height: 780px;
   border: 1px solid white;
@@ -908,7 +907,7 @@ a.popup-close {
 }
 
 #img-sp {
-  margin: 5 auto;
+  margin: 5px auto;
   width: 700px;
   height: 300px;
   display: flex;
