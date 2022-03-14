@@ -45,6 +45,9 @@ body.preload {
 body.darken {
   background: #fff;
 }
+body.darken .homeTableIcon {
+  display: none;
+}
 body.darken .creationsLink {
   opacity: 0;
 }
