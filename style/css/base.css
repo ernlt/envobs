@@ -1019,7 +1019,11 @@ a.popup-close {
   display: flex;
 }
 
-#resp1, #resp2 {
+#resp1 {
+  margin: 5 auto; 
+}
+
+#resp2 {
   margin: 5 auto;
 }
 
