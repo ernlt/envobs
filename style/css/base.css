@@ -363,6 +363,7 @@ aside {
 }
 .homeCellTitle {
   position: absolute;
+  height: 23px;
   z-index: 1;
   top: 7px;
   bottom: 0px;
@@ -424,7 +425,7 @@ aside {
   border-left-color: #333; 
 }
 .homeCell:hover .homeCellTitle {
-  height: 20px;
+  height: 23px;
   color: #333; 
   font-weight: 400;
 }
