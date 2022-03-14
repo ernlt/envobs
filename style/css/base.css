@@ -710,7 +710,7 @@ a.popup-close {
 
 #img-vpres {
   margin-top: 20px;
-  margin-left: 0px;
+  margin-left: -5px;
   width: 340px;
   height: 250px;
   display: flex;
