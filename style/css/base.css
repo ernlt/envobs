@@ -363,16 +363,19 @@ aside {
 }
 .homeCellTitle {
   position: absolute;
+  margin: 0 auto;
+  width: 195px;
   height: 23px;
-  z-index: 1;
-  top: 7px;
+  top: 205px;
   bottom: 0px;
-  left: 0;
+  left: 5px;
   padding-left: 5px;
-  text-align: center;
-  color: #bebebe;
+  text-align: left;
   font-weight: 400;
   font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  z-index: 1;
   -moz-transition: padding 0.5s;
   -o-transition: padding 0.5s;
   -webkit-transition: padding 0.5s;
@@ -418,15 +421,15 @@ aside {
   filter: grayscale(0%);
 }
 .homeCell.experience .homeCellTitle {
-  color: #333;
+  color: #fff;
   font-weight: 400;
 }
 .homeCell.experience .homeCellTitle::before {
-  border-left-color: #333; 
+  border-left-color: #fff; 
 }
 .homeCell:hover .homeCellTitle {
   height: 23px;
-  color: #333; 
+  color: #fff; 
   font-weight: 400;
 }
 .homeCell.experience .homeCellSubtitle {
