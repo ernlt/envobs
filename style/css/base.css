@@ -934,14 +934,14 @@ a.popup-close {
 
 #img-signal {
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 60px;
   width: 350px;
   height: 320px;
   display: flex;  
 }
 #img-noise {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   width: 350px;
   height: 320px;
   display: flex;
