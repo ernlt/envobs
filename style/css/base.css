@@ -614,11 +614,12 @@ a.popup-close {
 }
 
 .contact_content {
-  color: #333;
-  background: transparent;
+  margin-top: -80px;
   width: 425px;
   height: 350px;
   float: left;
+  color: #333;
+  background: transparent;
 }
 
 iframe {
