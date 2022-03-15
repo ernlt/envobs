@@ -623,6 +623,7 @@ a.popup-close {
 
 iframe {
   margin-top: -80px;
+  padding: 10px;
   border: 0px;
   width: 425px;
   height: 350px;
