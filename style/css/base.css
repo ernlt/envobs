@@ -613,6 +613,13 @@ a.popup-close {
   color: #3498db; 
 }
 
+iframe {
+  margin-top: -80px;
+  border: 0px;
+  width: 425px;
+  float: right;
+}
+
 #img1 {
   left: -98px;
   width: 394px;
