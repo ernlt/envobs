@@ -615,6 +615,7 @@ a.popup-close {
 
 .contact_content {
   margin-top: -80px;
+  padding-top: 10px;
   width: 425px;
   height: 350px;
   float: left;
