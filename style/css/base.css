@@ -613,6 +613,14 @@ a.popup-close {
   color: #3498db; 
 }
 
+.contact_content {
+  color: #333;
+  background: transparent;
+  width: 425px;
+  height: 350px;
+  float: left;
+}
+
 iframe {
   margin-top: -80px;
   border: 0px;
