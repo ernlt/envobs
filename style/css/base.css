@@ -63,8 +63,7 @@ body.darken .homeTableIcon {
   margin: 0 auto;
   width: 850px;
   height: 30px;
-  background: transparent;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
   color: #333;
 }
 .homeLinks {
@@ -84,8 +83,7 @@ body.darken .homeTableIcon {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
   text-align: center;
-  color: #333;
-  opacity: 0.8;
+  opacity: 1;
   z-index: 10;
   cursor: default;
   -moz-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
@@ -96,10 +94,12 @@ body.darken .homeTableIcon {
 .title {
   margin-top: -5px;
   font-size: 30px;
+  color: #3498db;
 }
 .title2 {
   margin-top: 3px;
   font-size: 18px;
+  color: #333;
 }
 .container {
   margin: 0 auto;
