@@ -623,9 +623,7 @@ iframe {
 #photo {
   width: 200px;
   height: 200px;
-  margin-top: 20px;
-  margin-left: 60px;
-  margin-right: 10px;
+  margin: 20px;
   /*filter: grayscale(100%);*/
 }
 
