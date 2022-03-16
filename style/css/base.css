@@ -272,6 +272,13 @@ aside {
   overflow: hidden;
   color: #333;
 }
+.homeTableAbout {
+  padding-top: 80px;
+  margin: 0 auto;
+  width: 850px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.1);
+}
 .homeCell {
   display: block;
   position: relative;
