@@ -625,6 +625,7 @@ iframe {
   height: 200px;
   margin-top: 20px;
   margin-left: 60px;
+  margin-right: 10px;
   /*filter: grayscale(100%);*/
 }
 
