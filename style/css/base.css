@@ -611,6 +611,10 @@ a.popup-close {
 .contact_info {
   font-family: courier, courier new, serif;
 }
+.underline {
+  text-decoration: underline;
+  text-underline-position: auto;
+}
 iframe {
   margin-top: -80px;
   padding: 10px;
