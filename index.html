@@ -894,7 +894,7 @@
 				La grille de référence utilisée pour les calculs est à l'origine une grille globale (Integrated Forcast System), cartésienne en latitudes-longitudes, avec une résolution spatiale de 1°/120 (30" soit environ 1km).
 				Cette grille a été fournie par l'ECMWF sous la forme d'un fichier de masque Terre-Mer au format GRIB, puis converti au format NetCDF.
 				Les valeurs de longitudes initialement comprises entre 0 et 360°, ont été transformées pour obtenir des valeurs comprises entre -180° et +180°, afin de travailler sur une grille continue.
-				Le fichier a ensuite été tronqué afin d'établir une zone d'emprise à l'échelle de l'Europe. Les dimensions de cette nouvelle zone d'intérêt sont désormais de 4800 x 5040 pixels.
+				Le fichier a ensuite été tronqué afin d'établir une zone d'emprise à l'échelle de l'Europe.
 				<br><br>
 				La figure 1 ci-contre est un aperçu de l'extraction de la nouvelle grille, construite avec un pas (échantillonnage) de 10 pixels à partir de la grille IFS 1km tronquée.
 				L'extraction des coordonnées Sud-Ouest et Nord-Est de chaque domaine se fait alors par indexation dans les listes de latitudes-longitudes de cette grille de destination (ponts rouges).
