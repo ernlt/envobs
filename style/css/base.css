@@ -794,7 +794,7 @@ iframe {
 
 #img-shom {
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
   width: 320px;
   height: 200px;
   display: flex;
@@ -803,16 +803,16 @@ iframe {
 #img-egg {
   margin-top: 20px;
   margin-left: 0px;
-  width: 350px;
-  height: 320px;
+  width: 380px;
+  height: 350px;
   display: flex;
 }
 
 #img-smh1 {
   margin-top: 10px;
-  margin-left: 80px;
-  width: 350px;
-  height: 320px;
+  margin-left: 40px;
+  width: 380px;
+  height: 350px;
   display: flex;
 }
 
@@ -860,7 +860,7 @@ iframe {
 
 #img-mesh2 {
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 5px;
   width: 400px;
   height: 260px;
   display: flex;
