@@ -1050,7 +1050,8 @@ iframe {
 
 #img-dom {
   margin-top: 20px;
-  margin-right: 10px;
+  margin-right: 0px;
+  margin-left: 20px;
   width: 400px;
   height: 280px;
   display: flex;
@@ -1067,7 +1068,8 @@ iframe {
 
 #img-sch {
   margin-top: -150px;
-  margin-left: 140px;
+  margin-left: 20px;
+  margin-right: -10px;
   width: 418px;
   height: 460px;
   display: flex;
