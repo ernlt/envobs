@@ -873,6 +873,22 @@
 		<div class="divider"></div>
 
 		<h3 class="section meteo">Méthode</h3>
+		<h4>Chaîne de traitement</h4>
+		<div class="description">
+			<p>
+				La chaîne de traitement GeoClimate est implémentée par un workflow de données. Ce workflow a est lui-même été adapté selon
+				une méthodologie développée afin d'extraire et de formater les données OpenStreetMap en tant que données vectorielles, pour construire des couches SIG
+				conformes au modèle de données d'entrée de la chaîne GeoClimate. Ceci permet ensuite de calculer des indicateurs géospatiaux
+				et générer les principales variables LCZ à l'échelle de l'Unité Spatiale de Référence (RSU).<br><br>
+				Les données de sortie de GeoClimate se composent à la fois d'un ensemble d'indicateurs et de classifications. 
+				Le logiciel utilise ainsi le concept de Workflow pour enchaîner un ensemble d'analyses spatiales et de traitements statistiques.
+				La figure ci-contre représente un schéma simplifié du workflow OSM utilisé par GeoClimate. <br><br>
+			</p>
+			<aside>
+				<img src="style/css/img/scheme.png" id="img-sch" class="demo-img">
+			</aside>
+		</div>
+		<h4>Calage des grilles</h4>
 		<div class="description">
 			<p>
 				La grille de référence utilisée pour les calculs est à l'origine une grille globale (Integrated Forcast System), cartésienne en latitudes-longitudes, avec une résolution spatiale de 1°/120 (30" soit environ 1km).
@@ -887,28 +903,13 @@
 				<img src="style/css/img/domain.png" id="img-dom" class="demo-img">
 			</aside>
 		</div>
+		
+		<h4>Applications</h4>
+		
 		<div class="description">
-			<p>
-				La chaîne de traitement GeoClimate est implémentée par un workflow de données. Ce workflow a est lui-même été adapté selon
-				une méthodologie développée afin d'extraire et de formater les données OpenStreetMap en tant que données vectorielles, pour construire des couches SIG
-				conformes au modèle de données d'entrée de la chaîne GeoClimate. Ceci permet ensuite de calculer des indicateurs géospatiaux
-				et générer les principales variables LCZ à l'échelle de l'Unité Spatiale de Référence (RSU).<br><br>
-				Les données de sortie de GeoClimate se composent à la fois d'un ensemble d'indicateurs et de classifications. 
-				Le logiciel utilise le concept de Workflow pour enchaîner un ensemble d'analyses spatiales et de traitements statistiques.
-				La figure ci-contre représente un schéma simplifié du workflow OSM utilisé par GeoClimate. <br><br>
-				L'ensemble des figures ci-dessous représente des cartes vectorielles construites à partir des fichiers de sortie générés par la chaîne.
+			<p>	L'ensemble des figures ci-dessous représente des cartes vectorielles construites à partir des fichiers de sortie générés par la chaîne.
 	                  	La ville de Reading près de Londres, est choisie pour illustrer ce cas test.
 	                  	Ces cartes représentent la distribution spatiale des indicateurs de surface, calculés aux échelles du bâtiment et des RSU.
-			</p>
-			<aside>
-				<img src="style/css/img/scheme.png" id="img-sch" class="demo-img">
-			</aside>
-		</div>
-
-		<div class="vspace"></div>
-
-		<div class="description">
-			<p>
 	                  	A titre d'exemple, les cartes suivantes ont été réalisées :<br><br>
 
 				-  La première carte illustre l'indicateur des hauteurs de toit estimées. </br>
