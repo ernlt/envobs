@@ -384,9 +384,7 @@
 				<p>
 					Ce projet intervient dans le cadre de d'une recommandation d'unification des différentes surfaces hydrographiques marines par l'Organisation Hydrographique Internationale (OHI), et nécessite la réalisation de surfaces de références verticales marines.
 					Les premiers résultats de cette étude montre l'impact de la nature du géoïde utilisé pour le calcul de la Surface Moyenne Hydrographique (SMH), obtenue par fusion des données altimétriques, des mesures GPS et marégraphiques.
-					En 2016, un écart de l'ordre de 15cm a été constaté entre deux surfaces moyennes, l'une exploitant les données du géoïde EGG97 (European Gravimetric Geoid) et l'autre, les données du géoïde EGG2015, le plus récent. ​
-				</p>
-				<p>
+					En 2016, un écart de l'ordre de 15cm a été constaté entre deux surfaces moyennes, l'une exploitant les données du géoïde EGG97 (European Gravimetric Geoid) et l'autre, les données du géoïde EGG2015, le plus récent.
 					Les deux figures ci-dessous illustrent la fusion des données altimétriques et GPS, et en particulier les différences de hauteurs de SMH selon les deux géoïdes utilisés, pour la zone de Saint-Malo.
 				</p>
 			</article>
@@ -480,6 +478,27 @@
 
 		<div class="divider"></div>
 
+		<h3 class="section meteo">Modèle</h3>	
+		<div class="description">
+			<p>
+				MARS (Model At Regional Scale) est modèle numérique qui intègre un algorithme de calcul utilisant la méthode des différences finies.
+				La discrétisation spatiale et temporelle des équations de Saint-Venant se fait à l'aide d'une grille structurée et décentrée de type C dans la classification d'Arakawa.
+				L'élévation de surface libre, la bathymétrie ainsi que les différents marqueurs sont calculés au centre des mailles de la grille.
+				En revanche, les composantes du champ de vitesse sont déterminées au centres des bords Est et Nord de chaque maille, et dirigées selon l'axe Ouest-Est pour la composante zonale, et selon l'axe Sud-Nord pour la composante méridienne.
+				La figure ci-dessous illustre le champs de vitesses des courants de surface en intensité et directions.
+			</p>
+			<aside><img src="style/css/img/spd.png" id="img-sspd" class="demo-img"></aside>
+		</div>
+		<div class="description">
+			<p>     La bathymétrie du modèle est calculée à partir de données acquises par des sondeurs mono et multi-faisceaux du SHOM et de l'IFREMER, de données issues de Modèles Numériques de Terrain (MNT) et de données LIDAR.
+				Cela permet d'obtenir une résolution spatiale adaptée à la zone d'étude. A partir des séries de points avec leurs coordonnées géographiques et leur profondeur, dont la densité peut varier d'une région à l'autre selon la disponibilité des données,
+				une interpolation est effectuée en faisant intervenir une méthode de recherche des plus proches voisins, pour chaque point "en eau" de la grille du maillage. La figure ci-contre représente la bathymétrie définie sur la baie et l'embouchure de la Seine.
+			</p>
+			<aside><img src="style/css/img/bathy.png" id="img-bathy" class="demo-img"></aside>
+		</div>
+
+		<div class="divider"></div>
+
 		<h3 class="section meteo">Produit</h3>	
 		<div class="description">
 			<p>
@@ -500,27 +519,6 @@
 				Elles permettent de comparer simultanément les résultats issus des sorties du modèle MARS avec les mesures ADCP.
 			</p>
 			<aside><img src="style/css/img/spd2.png" id="img-spd2" class="demo-img"></aside>
-		</div>
-
-		<div class="divider"></div>
-
-		<h3 class="section meteo">Modèle</h3>	
-		<div class="description">
-			<p>
-				MARS (Model At Regional Scale) est modèle numérique qui intègre un algorithme de calcul utilisant la méthode des différences finies.
-				La discrétisation spatiale et temporelle des équations de Saint-Venant se fait à l'aide d'une grille structurée et décentrée de type C dans la classification d'Arakawa.
-				L'élévation de surface libre, la bathymétrie ainsi que les différents marqueurs sont calculés au centre des mailles de la grille.
-				En revanche, les composantes du champ de vitesse sont déterminées au centres des bords Est et Nord de chaque maille, et dirigées selon l'axe Ouest-Est pour la composante zonale, et selon l'axe Sud-Nord pour la composante méridienne.
-				La figure ci-dessous illustre le champs de vitesses des courants de surface en intensité et directions.
-			</p>
-			<aside><img src="style/css/img/spd.png" id="img-sspd" class="demo-img"></aside>
-		</div>
-		<div class="description">
-			<p>La bathymétrie du modèle est calculée à partir de données acquises par des sondeurs mono et multi-faisceaux du SHOM et de l'IFREMER, de données issues de Modèles Numériques de Terrain (MNT) et de données LIDAR.
-				Cela permet d'obtenir une résolution spatiale adaptée à la zone d'étude. A partir des séries de points avec leurs coordonnées géographiques et leur profondeur, dont la densité peut varier d'une région à l'autre selon la disponibilité des données,
-				une interpolation est effectuée en faisant intervenir une méthode de recherche des plus proches voisins, pour chaque point "en eau" de la grille du maillage. La figure ci-contre représente la bathymétrie définie sur la baie et l'embouchure de la Seine.
-			</p>
-			<aside><img src="style/css/img/bathy.png" id="img-bathy" class="demo-img"></aside>
 		</div>
 
 		<div class="divider"></div>
