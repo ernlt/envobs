@@ -431,6 +431,9 @@ aside {
 .homeCell.experience:hover .homeCellSubtitle {
   color: white;
 }
+.active_link {
+  color: #3498db; 
+}
 .greenLink {
   margin-top: 10px;
   margin-bottom: 20px;
