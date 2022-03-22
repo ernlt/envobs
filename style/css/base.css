@@ -654,15 +654,6 @@ iframe {
   border-color: #003247;
 }
 
-#img-comp {
-  margin-top: 15px;
-  margin-left: 0px;
-  margin-right: 60px;
-  width: 475px;
-  height: 325px;
-  display: flex;
-}
-
 #img-mt {
   float: right;
   width: 260px;
@@ -708,6 +699,19 @@ iframe {
   margin-left: 50px;
 }
 
+#img-vir {
+  margin: 0 auto; 
+}
+
+#img-comp {
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-right: 60px;
+  width: 475px;
+  height: 325px;
+  display: flex;
+}
+
 #img-types {
   margin-top: 15px;
   margin-left: -50px;
@@ -735,10 +739,6 @@ iframe {
 
 #radiances {
   margin: 10px auto;  
-}
-
-#img-vir {
-  margin: 30px auto; 
 }
 
 #img-cha {
