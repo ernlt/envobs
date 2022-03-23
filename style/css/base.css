@@ -276,7 +276,7 @@ aside {
   color: #333;
 }
 .homeTableAbout {
-  padding-top: 80px;
+  padding-top: 0px;
   margin: 0 auto;
   width: 850px;
   overflow: hidden;
