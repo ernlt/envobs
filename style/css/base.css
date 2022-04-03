@@ -45,6 +45,9 @@ body.preload {
 body.darken {
   background: #fff;
 }
+body.darken .homeLogo {
+  display: none;
+}
 body.darken .homeTableIcon {
   display: none;
 }
