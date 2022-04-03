@@ -105,6 +105,12 @@ body.darken .homeTableIcon {
   font-size: 18px;
   color: #333;
 }
+.homeTitle {
+  margin: 0 auto;
+  width: 850px;
+  height: 50px;
+
+}
 .container {
   margin: 0 auto;
   padding: 0 0px;
