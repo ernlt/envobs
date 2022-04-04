@@ -51,6 +51,9 @@ body.darken .homeLogo {
 body.darken .homeTableIcon {
   display: none;
 }
+body.darken .container {
+  margin-top: 0px;
+}
 .homeLogo {
   position: center;
   margin: 0 auto;
@@ -116,8 +119,7 @@ body.darken .homeTitle {
 .container {
   margin: 0 auto;
   padding: 0 0px;
-  margin-top: 0px;
-  padding-top: 30px;
+  padding-top: 0px;
   width: 850px;
   position: relative;
   color: #7a7a7a;
