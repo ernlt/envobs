@@ -51,7 +51,7 @@ body.darken .homeLogo {
 body.darken .homeTableIcon {
   display: none;
 }
-.container {
+body.darken .container {
   margin-top: -40px;
 }
 .homeLogo {
