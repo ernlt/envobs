@@ -92,10 +92,6 @@ body.darken .container {
   opacity: 1;
   z-index: 10;
   cursor: default;
-  -moz-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
-  -o-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
-  -webkit-transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
-  transition: font-weight 1s, color 1s, margin 1s, font-size 1s, letter-spacing 1s;
 }
 .title {
   margin-top: -5px;
