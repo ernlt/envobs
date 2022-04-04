@@ -52,7 +52,7 @@ body.darken .homeTableIcon {
   display: none;
 }
 body.darken .container {
-  margin-top: 0px;
+  margin-top: -20px;
 }
 .homeLogo {
   position: center;
