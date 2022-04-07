@@ -1053,6 +1053,14 @@ iframe {
   display: flex;
 }
 
+#img-cth {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 320px;
+  height: 320px;
+  display: flex;
+}
+
 #img-europe {
   margin: 10px auto;
   width: 640px;
