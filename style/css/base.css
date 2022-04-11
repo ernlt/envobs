@@ -171,7 +171,11 @@ p {
   text-align: justify;
 }
 a {
+  color: #3498db;
   text-decoration: none; 
+}
+a.labs:link {
+  color: #7a7a7a;
 }
 a.labs:hover, a.labs:active {
   color: #3498db;
