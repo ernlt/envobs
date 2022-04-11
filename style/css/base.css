@@ -171,10 +171,10 @@ p {
   text-align: justify;
 }
 a {
+  color: #3498db;
   text-decoration: none; 
 }
 a.labs:hover, a.labs:active {
-  color: #3498db;
   text-decoration: underline #3498db;
 }
 a.labs:visited {
