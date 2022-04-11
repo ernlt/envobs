@@ -173,10 +173,8 @@ p {
 a {
   text-decoration: none; 
 }
-a.labs:link {
-  color: #3498db;
-}
 a.labs:hover, a.labs:active {
+  color: #3498db;
   text-decoration: underline #3498db;
 }
 a.labs:visited {
