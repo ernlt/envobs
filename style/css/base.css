@@ -170,6 +170,9 @@ p {
   color: #7a7a7a;
   text-align: justify;
 }
+a {
+  text-decoration: none; 
+}
 .labs:hover {
   color: #3498db;
 }
