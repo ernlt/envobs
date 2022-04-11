@@ -173,11 +173,11 @@ p {
 a {
   text-decoration: none; 
 }
-.labs a:hover {
+a.labs:hover {
   color: #3498db;
   text-decoration: underline #3498db;
 }
-.labs a:visited {
+a.labs:visited {
   color: #7a7a7a; 
 }
 .span {
