@@ -171,8 +171,10 @@ p {
   text-align: justify;
 }
 a {
-  color: #3498db;
   text-decoration: none; 
+}
+a.labs:link {
+  color: #3498db;
 }
 a.labs:hover, a.labs:active {
   text-decoration: underline #3498db;
