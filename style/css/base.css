@@ -174,15 +174,12 @@ a {
   color: #3498db;
   text-decoration: none; 
 }
-a.labs:link {
+a.labs:link, a.labs:visited, a.labs:active {
   color: #7a7a7a;
 }
-a.labs:hover, a.labs:active, a.labs:focus {
+a.labs:hover {
   color: #3498db;
   text-decoration: underline #3498db;
-}
-a.labs:visited {
-  color: #7a7a7a; 
 }
 .span {
   color: #333;
