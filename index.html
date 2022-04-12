@@ -724,7 +724,7 @@
 				Dans notre étude, les mesures de XCO<sub>2</sub> observées par le satellite sont simulées par un modèle dont un estimateur statistique est donné par l'application:
 			</p>
 		</div>
-		$$s \longmapsto y = Ms + y^{fixed}$$
+		$$\bf{s \longmapsto y = Ms + y^{fixed}}$$
 		<div class="description">
 			<p>
 				• \(s\) est appelé vecteur de contrôle et représente les variables d'entrée du modèle. Ces variables sont utilisées, soit pour effectuer la remise à l'échelle (à une résolution horaire et spatiale de 2km) des flux anthropiques et biosphériques associés, 
@@ -739,7 +739,7 @@
 				où  \(J\) est une fonctionnelle quadratique définie par la fonction coût:
 			</p>
 		</div>
-		$$J(s) = (s-s^b)^T B^{-1}(s-s^b) + (y^{0}-Ms)^T R^{-1}(y^{0}-Ms)$$
+		$$\bf{J(s) = (s-s^b)^T B^{-1}(s-s^b) + (y^{0}-Ms)^T R^{-1}(y^{0}-Ms)}$$
 		<div class="description">
 			<p>
 				où l'on a les notations et hypothèses suivantes:<br>
@@ -752,11 +752,11 @@
 				La solution au problème est unique et définie par le fait que le gradient de \(J\) est nul à l'optimum: \(\nabla J(s^a)=0\) (équation d'Euler). On obtient alors les relations suivantes:<br>
 			</p>
 		</div>
-		$$A = (B^{-1} + M^{T}R^{-1}M)^{-1} \\$$
-		$$s^a = s^b + K(y^0 - Ms^b - y^{fixed})$$ &nbsp; &nbsp; avec $$K = AM^T R^{-1}$$
+		$$\bf{A = (B^{-1} + M^{T}R^{-1}M)^{-1}}\\$$
+		$$\bf{s^a = s^b + K(y^0 - Ms^b - y^{fixed})}$$ &nbsp; &nbsp; avec $$\bf{K = AM^T R^{-1}}$$
 		<div class="description">
 			<p>
-				•  \(s^a\) est l'estimateur optimal de  \(s\), sachant les distribution statistques de  \(s^b\) et  \(y^0\).<br>
+				•  \(s^a\) est l'estimateur optimal de  \(s\), sachant les distribution statistques de  \bf{\(s^b\)} et  \bf{\(y^0\)}.<br>
 				•  \(A\) est la matrice de covariance d'erreurs a posteriori. Elle caractérise les incertitudes a posteriori sur les variables de contrôle de \(s^a\).
 				Cette nouvelle information statistique a posteriori sur les émissions permet d'obtenir des incertitudes plus faibles par rapport aux statistiques a priori.
 				On évalue cette amélioration en la quantifiant en termes de réduction d'incertitude, exprimée à partir des déviations standard par:  \(1-\frac{\sigma_A}{\sigma_B}\).
@@ -770,7 +770,7 @@
 			<p>
 				Dans notre cas, une fonction de réponse est la donnée d'une carte de concentration de XCO<sub>2</sub> de la composante d'un flux associé à la variable de contrôle (estimateur optimal).
 				Elle est calculée à partir de l'opérateur: 
-				$$s_j \longmapsto m_j = Ms_j$$
+				$$\bf{s_j \longmapsto m_j = Ms_j}$$
 				où \(m_j\) est la  \(j^{eme}\) colonne de la matrice \(M\) et  \(s_j\) est le vecteur de contrôle dont la  \(j^{eme}\) variable est égale à 1, et les autres variables égales à 0.
 				Les fonctions de réponse permettent de quantifier l'impact des émissions sur la concentration de CO<sub>2</sub> au temps de passage du satellite.  
 				Les figures ci-dessous illustrent (partie haute) les fonctions de réponse horaires des émissions anthropiques et (partie basse) celles des émissions par secteur.
